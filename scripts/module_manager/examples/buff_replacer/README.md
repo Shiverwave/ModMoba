@@ -1,0 +1,1 @@
+The buff replacer adds the ability to replace an existing buff icon with a new one under the same key without previously removing it. The newly added buff will remain in the same position as the existing buff.

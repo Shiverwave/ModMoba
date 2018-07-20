@@ -1,0 +1,50 @@
+<ObjectTemplate>
+	<ClientId>554</ClientId>
+	<Name>[0078ff]Box of Spells[-]</Name>
+	<Hue>0xFFFFFFFF</Hue>
+	<SharedStateEntry name="Capacity" type="int" value="20"/>
+	<SharedStateEntry name="Weight" type="int" value="1"/>
+	<ObjectVariableComponent/>			
+	<ScriptEngineComponent>
+		<LuaModule Name="container"/>
+		<LuaModule Name="fill_random_loot">
+			<Initializer>
+				{
+					LootTables =
+					{	
+						{						
+						    NumItems = 20,
+							LootItems = 
+							{ 	
+								{ Chance = 100, Template = "scroll_fireball", Unique = true },
+								{ Chance = 100, Template = "scroll_heal", Unique = true },
+								{ Chance = 100, Template = "scroll_icelance", Unique = true },
+								{ Chance = 100, Template = "scroll_lightning", Unique = true },
+								{ Chance = 100, Template = "scroll_bindportal", Unique = true },
+								{ Chance = 100, Template = "scroll_flamewave", Unique = true },
+								{ Chance = 100, Template = "scroll_resurrect", Unique = true },
+								{ Chance = 100, Template = "scroll_chainlightning", Unique = true },
+								{ Chance = 100, Template = "scroll_flameaura", Unique = true },
+								{ Chance = 100, Template = "scroll_pillaroffire", Unique = true },
+								{ Chance = 100, Template = "scroll_cloak", Unique = true },
+								{ Chance = 100, Template = "scroll_icerain", Unique = true },
+								{ Chance = 100, Template = "scroll_spikepath", Unique = true },
+								{ Chance = 100, Template = "scroll_walloffire", Unique = true },
+								{ Chance = 100, Template = "scroll_teleport", Unique = true },
+								{ Chance = 100, Template = "scroll_greaterheal", Unique = true },
+								{ Chance = 100, Template = "scroll_poison", Unique = true },
+								{ Chance = 100, Template = "scroll_cure", Unique = true },
+																
+								{ Chance = 100, Template = "scroll_voidblast", Unique = true },
+								{ Chance = 100, Template = "scroll_souldrain", Unique = true },
+								{ Chance = 100, Template = "scroll_spawnskeleton", Unique = true },
+								{ Chance = 100, Template = "scroll_spawnimp", Unique = true },																
+								{ Chance = 100, Template = "scroll_grimaura", Unique = true },
+							} 
+						},	
+					}
+				}
+			</Initializer>
+		</LuaModule>
+	</ScriptEngineComponent>
+</ObjectTemplate>

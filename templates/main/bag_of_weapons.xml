@@ -1,0 +1,37 @@
+<ObjectTemplate>
+	<ClientId>554</ClientId>
+	<Name>[0078ff]Weapons[-]</Name>
+	<Hue>0xFFFFFFFF</Hue>
+	<SharedStateEntry name="Capacity" type="int" value="20"/>
+	<SharedStateEntry name="Weight" type="int" value="1"/>
+	<ObjectVariableComponent/>			
+	<ScriptEngineComponent>
+		<LuaModule Name="container"/>
+		<LuaModule Name="fill_random_loot">
+			<Initializer>
+				{
+					LootTables =
+					{	
+						{						
+						    NumItems = 10,
+							LootItems = 
+							{ 	
+								{ Chance = 100, Template = "weapon_battleaxe_finesteel", Unique = true },
+								{ Chance = 100, Template = "weapon_dagger_finesteel", Unique = true },
+								{ Chance = 100, Template = "weapon_greathammer_finesteel", Unique = true },
+								{ Chance = 100, Template = "weapon_longsword_finesteel", Unique = true },	
+								{ Chance = 100, Template = "weapon_rapier_finesteel", Unique = true },	
+								{ Chance = 100, Template = "weapon_glaive_finesteel", Unique = true },	
+								{ Chance = 100, Template = "weapon_staff_arcane", Unique = true },	
+								{ Chance = 100, Template = "weapon_long_spear_finesteel", Unique = true },	
+									
+								{ Chance = 100, Template = "shield_buckler_finesteel", Unique = true },		
+								{ Chance = 100, Template = "shield_large_finesteel", Unique = true },						
+							} 
+						},	
+					}
+				}
+			</Initializer>
+		</LuaModule>
+	</ScriptEngineComponent>
+</ObjectTemplate>

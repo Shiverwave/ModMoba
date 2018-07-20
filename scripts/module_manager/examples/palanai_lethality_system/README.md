@@ -1,0 +1,1 @@
+The palanai lethality system adds a pvp toggle as a combat ability, allowing players to toggle their pvp stances between deadly, sparring and retaliating.
