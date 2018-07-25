@@ -1,0 +1,9 @@
+[Monk]
+- Uses Staff
+- Two main abilities
+	- Each affects karma
+	- "Balance" is his buff
+	- The more balanced the better
+	
+- Make a passive
+- Make a channeled ult
