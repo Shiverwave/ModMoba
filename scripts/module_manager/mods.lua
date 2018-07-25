@@ -8,5 +8,6 @@ MODS = {
    	"sceneCreator",
  	"hellportal",
 	"DBMOBA",
+	"Windows for ModMoba",
 }
 
