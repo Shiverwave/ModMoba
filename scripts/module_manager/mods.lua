@@ -5,13 +5,10 @@
 -- To load a mod on start up, simply add the directory name to the 'MODS' table.
 
 MODS = {
-<<<<<<< HEAD
    	"sceneCreator",
  	"hellportal",
 	"DBMOBA",
 	"Windows for ModMoba",
-=======
    	--Test
->>>>>>> 7b4c9019d2ce041ab6a32f729d6b6bb8dd23d0b5
 }
 
