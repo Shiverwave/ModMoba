@@ -1,0 +1,43 @@
+<ObjectTemplate>
+	<TemplateName>Assassin</TemplateName>
+	<ClientId>1</ClientId>
+	<Hue>176</Hue>
+	<MobileComponent>
+		<BaseRunSpeed>1.05</BaseRunSpeed>
+		<MobileType>Player</MobileType>
+	</MobileComponent>
+	<ObjectVariableComponent/>	
+	<ScriptEngineComponent>
+		<LuaModule Name="player">
+			<Initializer>
+				{
+					Stats = { Str=15, Agi=50, Int=25, Con=10, Wis=10, Will=25 },
+					EquipTable =
+					{
+						Backpack = { "backpack" },
+						RightHand = { "weapon_dagger" },
+						Legs = { "armor_assassin_leggings" },
+						Chest = { "armor_assassin_chest" },
+						Helm = { "armor_assassin_helm" },
+						BodyPartHead = TemplateDefines.MaleHeads,	
+						BodyPartHair = TemplateDefines.MaleHairVillage,
+					},
+					LootTables = {	
+					-- Starting items
+						{
+							NumCoins = 350,
+							NumItems = 5,
+							LootItems = {
+								{ Template = "torch", Unique = true },
+								{ Template = "tool_hunting_knife", Unique = true },
+								{ Template = "cooked_stew", Unique = true },
+								{ Template = "item_bread", Unique = true },
+								{ Template = "bandage", Unique = true, StackCount = 20 },
+							},
+						},
+					},	 	       
+				}
+			</Initializer>
+		</LuaModule>
+	</ScriptEngineComponent>	
+</ObjectTemplate>
