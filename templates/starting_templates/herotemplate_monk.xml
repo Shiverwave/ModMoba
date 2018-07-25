@@ -1,9 +1,9 @@
 <ObjectTemplate>
 	<TemplateName>Monk</TemplateName>
-	<ClientId>208</ClientId>
+	<ClientId>1</ClientId>
 	<Hue>176</Hue>
 	<MobileComponent>
-		<BaseRunSpeed>0.75</BaseRunSpeed>
+		<BaseRunSpeed>0.8</BaseRunSpeed>
 		<MobileType>Player</MobileType>
 	</MobileComponent>
 	<ObjectVariableComponent/>	
@@ -12,14 +12,16 @@
 			<Initializer>
 				{ 
 					Stats = { Str=25, Agi=25, Int=25, Con=25, Wis=25, Will=25 },
+					Skills = { },
 					EquipTable = 
 					{ 
 					    Backpack = { "backpack" },
 					    RightHand = { "Monk_StaffOfBalance" },
                         Legs = { "clothing_chest_beggar" }, 
                         Chest = { "clothing_legs_beggar" }, 
-						BodyPartHead = TemplateDefines.FemaleHeads,	
-						BodyPartHair = TemplateDefines.FemaleHairVillage,
+						BodyPartHead = head_male_03,	
+						BodyPartHair = hair_male_buzzcut,
+						BodyPartFacialHair = facial_hair_beard_longer,
                     },
 					LootTables = {	
 					    -- Starting items
