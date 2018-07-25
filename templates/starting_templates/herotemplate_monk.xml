@@ -12,7 +12,7 @@
 			<Initializer>
 				{ 
 					Stats = { Str=25, Agi=25, Int=25, Con=25, Wis=25, Will=25 },
-					Skills = { },
+					Skills = { Blocking=100, },
 					EquipTable = 
 					{ 
 					    Backpack = { "backpack" },
@@ -21,7 +21,7 @@
                         Chest = { "clothing_legs_beggar" }, 
 						BodyPartHead = head_male_03,	
 						BodyPartHair = hair_male_buzzcut,
-						BodyPartFacialHair = facial_hair_beard_longer,
+						BodyPartFacialHair = facial_hair_beard,
                     },
 					LootTables = {	
 					    -- Starting items
