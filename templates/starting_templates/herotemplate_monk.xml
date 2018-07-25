@@ -12,7 +12,7 @@
 			<Initializer>
 				{ 
 					Stats = { Str=25, Agi=25, Int=25, Con=25, Wis=25, Will=25 },
-					Skills = { Blocking=100, },
+					Skills = { Blocking=50, Bashing=50, },
 					EquipTable = 
 					{ 
 					    Backpack = { "backpack" },
