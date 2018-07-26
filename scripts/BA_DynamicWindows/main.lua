@@ -4,7 +4,7 @@
 function init(modLoader)
     modLoader:load({
         details = {
-            name = "Windows for ModMoba",
+            name = "BA_DynamicWindows",
             description = "Various Windows",
             author = "Braith Anderson",
             version = 2.0,
@@ -27,7 +27,7 @@ function init(modLoader)
         },
 
         overrideScripts = {
-            {vanilla = "scriptcommands", override = "teamSelect"}
+            {vanilla = "scriptcommands", override = "BA_scriptcommands"}
         }
     })
 end
