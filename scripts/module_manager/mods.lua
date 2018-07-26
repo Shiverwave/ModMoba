@@ -5,7 +5,6 @@
 -- To load a mod on start up, simply add the directory name to the 'MODS' table.
 
 MODS = {
-	"DBMOBA",
 	"BA_DynamicWindows",
 	"DOTSHero",
    	--Test
