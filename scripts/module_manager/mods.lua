@@ -7,6 +7,7 @@
 MODS = {
 	"DBMOBA",
 	"BA_DynamicWindows",
+	"DOTSHero",
    	--Test
 }
 

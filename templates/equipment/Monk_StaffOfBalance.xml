@@ -1,6 +1,6 @@
 <ObjectTemplate>
   <Name>[999999]Shenzu's Bō Of Balance[111111]</Name>
-	<ClientId>126</ClientId>
+	<ClientId>194</ClientId>
 	<Color>0x964B00</Color>
 	<SharedStateEntry name="Weight" type="int" value="4"/>
 	<ObjectVariableComponent>			
