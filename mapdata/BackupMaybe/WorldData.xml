@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<RegionDefinition>
+		<RegionName>BotJungle</RegionName>
+		<RegionBounds>
+			<Rect>[(-5.80891,1.043,142.9907)(129.327,1.043,151.8981)(125.0089,-28.83725,217.4093)(-10.12703,1.043,208.5019)(-5.80891,0.04299998,142.9907)(129.327,0.04299998,151.8981)(125.0089,-29.83725,217.4093)(-10.12703,0.04299998,208.5019)]</Rect>
+			<Center>(0,0,0)</Center>
+			<Size>(1,1,1)</Size>
+			<Position>(59.6,0.543,180.2)</Position>
+			<Rotation>(0,356.2289,0)</Rotation>
+			<Scale>(135.4292,1,65.6533)</Scale>
+		</RegionBounds>
+	</RegionDefinition>
+</WorldData>

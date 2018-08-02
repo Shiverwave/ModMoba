@@ -1,0 +1,65 @@
+<ObjectTemplate>
+	<ClientId>2</ClientId>
+	<Color>0xFF00FF00</Color>
+	<Name>Map Spawn Controller</Name>
+	<Tag>MapSpawnController</Tag>
+	<ObjectVariableComponent>			
+	</ObjectVariableComponent>		
+	<ScriptEngineComponent>
+	<LuaModule Name="map_resource_controller">
+			<Initializer>
+				{
+					SpawnedSources = 
+					{						
+						{ MaxCount = 5, Region = "BotJungle" ,     Resource = "Moss"},
+						{ MaxCount = 3, Region = "BotJungle",   Resource = "Moss"},
+						{ MaxCount = 2, Region = "BotJungle",   Resource = "Moss"},
+						{ MaxCount = 4, Region = "BotJungle" ,     Resource = "Ginseng"},
+						{ MaxCount = 1, Region = "BotJungle",   Resource = "Ginseng"},
+						{ MaxCount = 2, Region = "BotJungle",   Resource = "Ginseng"},
+						{ MaxCount = 7, Region = "BotJungle",      Resource = "LemonGrass" },
+						{ MaxCount = 7, Region = "BotJungle",      Resource = "LemonGrass" },
+						{ MaxCount = 5, Region = "BotJungle",      Resource = "LemonGrass" },
+						{ MaxCount = 3, Region = "BotJungle",      Resource =  "Mushrooms"},
+						{ MaxCount = 2, Region = "BotJungle",      Resource =  "Mushrooms"},
+						{ MaxCount = 4, Region = "BotJungle", Resource =  "Mushrooms"},
+						{ MaxCount = 3,  Region = "BotJungle",    Resource =  "Cotton"},
+						{ MaxCount = 4,  Region = "BotJungle",    Resource =  "Cotton"},
+						{ MaxCount = 3, Region = "BotJungle" ,     Resource = "Cotton"},
+
+					},
+				}
+			</Initializer>
+		</LuaModule>	
+	<LuaModule Name="shard_time_controller">
+			<Initializer>
+				{
+					DaylightDurationSecs = 2 * 60,
+					NighttimeDurationSecs = 0,
+				}
+			</Initializer>
+		</LuaModule>
+		<LuaModule Name="spawn_controller">
+			<Initializer>	
+			{
+					SpawnInfo = {
+						{ Count = 100, TemplateId = "chicken",    Region = "BotJungle"}, 
+						{ Count = 100, TemplateId = "chicken",    Region = "BotJungle"}, 
+						{ Count = 8, TemplateId =  "deer", Region = "BotJungle" }, 
+						{ Count = 5, TemplateId =  "rabbit", Region = "BotJungle" }, 
+						{ Count = 7, TemplateId =  "small_rat", Region = "BotJungle" }, 
+						{ Count = 6, TemplateId =  "coyote", Region = "BotJungle" }, 
+						{ Count = 5, TemplateId =  "small_bat", Region = "BotJungle" , SpawnTime = 22, SpawnDuration = 6},
+
+						--rare spawns
+						{ Count = 1, TemplateId = "mountain_dragon" , Region = "BotJungle",DelayMin=60,Chance=4 },
+						{ Count = 1, TemplateId = "ogre" , Region = "BotJungle",DelayMin=45,Chance=2 }, 
+						{ Count = 1, TemplateId = "spider_purple", Region = "BotJungle", DelayMin=60, Chance=2},   
+						{ Count = 2, TemplateId = "dire_wolf"   , Region = "BotJungle", DelayMin=60,Chance=3}, 
+						{ Count = 2, TemplateId = "dire_wolf"   , Region = "BotJungle", DelayMin=60,Chance=3}, 
+					},
+			}	
+			</Initializer>		
+		</LuaModule>
+	</ScriptEngineComponent>
+</ObjectTemplate>
