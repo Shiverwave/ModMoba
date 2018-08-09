@@ -19,6 +19,7 @@
 								   Legs = { "clothing_legs_beggar" },
 								   Head = { {"clothing_bandit_hood_helm","8F690A"} },
 			                       RightHand = { "weapon_shortbow" },
+								   Backpack = { "backpack"}
 			                     },
                     LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,
