@@ -9,6 +9,107 @@
 	<LuaModule Name="map_resource_controller">
 			<Initializer>
 				{
+					ResourceRegions = {
+						{
+							Region = "BotJungle",
+							Rock = 
+							{								
+								RegenRate = (1 / 2), 
+								Count = 25, 
+
+								RareResources = {
+									IronOre = {					
+										AvailablityPct = 80,
+										Count = 20, 
+									},
+								}
+							},
+						},		
+						{
+							Region = "BotJungle",
+							Rock = 
+							{								
+								RegenRate = (1 / 2), 
+								Count = 25, 
+
+								RareResources = {
+									IronOre = {					
+										AvailablityPct = 80,
+										Count = 20, 
+									},
+								}
+							},
+						},		
+						{
+							Region = "BotJungle",
+							Rock = 
+							{								
+								RegenRate = (1 / 2), 
+								Count = 25, 
+
+								RareResources = {
+									IronOre = {					
+										AvailablityPct = 60,
+										Count = 20, 
+									},
+									CopperOre = {
+										AvailablityPct = 20,
+										Count = 12, 
+									},
+									BronzeOre = {
+										AvailablityPct = 10,
+										Count = 12, 
+									},
+									SteelOre = {
+										AvailablityPct = 7,
+										Count = 12, 
+									},
+									ObsidianOre = {
+										AvailablityPct = 3,
+										Count = 12, 
+									},
+								}
+							},
+						},		
+						{
+							-- Global values
+							Tree = {
+								RegenRate = (1 / 2), 
+								Count = 15, 
+
+								RareResources = {
+									Ash = {					
+										AvailablityPct = 20,
+										Count = 8,
+									},
+								}
+							},
+							BlackForestTree = 
+							{								
+								RegenRate = (1 / 2), 
+								Count = 15, 
+
+								RareResources = {
+									BlightWood = {					
+										AvailablityPct = 10,
+										Count = 8, 
+									},
+								}
+							},
+							Rock = 
+							{								
+								RegenRate = (1 / 2), 
+								Count = 25, 
+
+								RareResources = {
+									IronOre = {					
+										AvailablityPct = 10,
+										Count = 20, 
+									},
+								}
+							},
+						},						
+					},
 					SpawnedSources = 
 					{						
 						{ MaxCount = 5, Region = "BotJungle" ,     Resource = "Moss"},
@@ -43,20 +144,10 @@
 			<Initializer>	
 			{
 					SpawnInfo = {
-						{ Count = 100, TemplateId = "chicken",    Region = "BotJungle"}, 
-						{ Count = 100, TemplateId = "chicken",    Region = "BotJungle"}, 
-						{ Count = 8, TemplateId =  "deer", Region = "BotJungle" }, 
-						{ Count = 5, TemplateId =  "rabbit", Region = "BotJungle" }, 
-						{ Count = 7, TemplateId =  "small_rat", Region = "BotJungle" }, 
-						{ Count = 6, TemplateId =  "coyote", Region = "BotJungle" }, 
-						{ Count = 5, TemplateId =  "small_bat", Region = "BotJungle" , SpawnTime = 22, SpawnDuration = 6},
-
-						--rare spawns
-						{ Count = 1, TemplateId = "mountain_dragon" , Region = "BotJungle",DelayMin=60,Chance=4 },
-						{ Count = 1, TemplateId = "ogre" , Region = "BotJungle",DelayMin=45,Chance=2 }, 
-						{ Count = 1, TemplateId = "spider_purple", Region = "BotJungle", DelayMin=60, Chance=2},   
-						{ Count = 2, TemplateId = "dire_wolf"   , Region = "BotJungle", DelayMin=60,Chance=3}, 
-						{ Count = 2, TemplateId = "dire_wolf"   , Region = "BotJungle", DelayMin=60,Chance=3}, 
+						{ Count = 500, TemplateId =  "rabbit", Region = "BotJungle" }, 
+						{ Count = 500, TemplateId =  "rabid_wolf", Region = "BotJungle" }, 
+						{ Count = 500, TemplateId =  "scorpion", Region = "BotJungle" }, 
+						{ Count = 500, TemplateId =  "viper", Region = "BotJungle" }, 
 					},
 			}	
 			</Initializer>		

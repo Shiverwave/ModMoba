@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldTemplateObjects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Group Name="Main" Exclude="False">
+		<DynamicObject>
+			<Name>SpawnEmerald</Name>
+			<Id>1</Id>
+			<ObjectCreationParams>spawn_position 22.229 0 24.22 0 31.055 0 1 1 1</ObjectCreationParams>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>MapController</Name>
+			<Id>2</Id>
+			<ObjectCreationParams>ModMoba_map_controller 22.889 0 31.569 0 0 0 1 1 1</ObjectCreationParams>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>EmeraldBanker</Name>
+			<Id>3</Id>
+			<ObjectCreationParams>simple_mob_spawner 17.67 0 22.61 0 0 0 1 1 1</ObjectCreationParams>
+			<ObjVarOverrides>
+				<StringVariable Name="spawnTemplate">cel_merchant_banker</StringVariable>
+			</ObjVarOverrides>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>EmeraldBlacksmith</Name>
+			<Id>4</Id>
+			<ObjectCreationParams>simple_mob_spawner 49.245 0 20.486 0 317.457 0 1 1 1</ObjectCreationParams>
+			<ObjVarOverrides>
+				<StringVariable Name="spawnTemplate">helm_blacksmith</StringVariable>
+			</ObjVarOverrides>
+		</DynamicObject>
+	</Group>
+</WorldTemplateObjects>
