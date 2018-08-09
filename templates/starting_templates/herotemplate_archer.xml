@@ -13,6 +13,7 @@
 			<Initializer>
 				{ 
 					Stats = { Str=30, Agi=50, Int=10, Con=10, Wis=10, Will=10 },
+					Skills = { Archery=50 },
 					EquipTable = { 
 								   Chest = { {"clothing_chest_thief","8F690A"} },
 								   Legs = { "clothing_legs_beggar" },
