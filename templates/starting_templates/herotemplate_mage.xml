@@ -19,7 +19,7 @@
 					Manifestation=50,
 					},	
 					EquipTable = {
-						Chest = { "clothing_long_sleeve_shirt_chest" },
+						Chest = { "clothing_simple_robe" },
 						Legs = { "clothing_shorts_legs" },
 						Head = {"clothing_mage_hat_helm"},
 						LeftHand = { "weapon_staff" },

@@ -18,7 +18,7 @@
 					    Backpack = { "backpack" },
 					    RightHand = { "Monk_StaffOfBalance" },
                         Legs = { "clothing_chest_beggar" }, 
-                        Chest = { "clothing_legs_beggar" }, 
+                        Chest = { "robe_linen_tunic" }, 
 						BodyPartHead = { "head_male03" } ,	
 						BodyPartHair = { "hair_male_buzzcut" },
 						BodyPartFacialHair = { "facial_hair_beard" },
