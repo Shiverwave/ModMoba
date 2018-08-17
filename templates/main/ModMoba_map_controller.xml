@@ -9,124 +9,15 @@
 	<LuaModule Name="map_resource_controller">
 			<Initializer>
 				{
-					ResourceRegions = {
-						{
-							Region = "BotJungle",
-							Rock = 
-							{								
-								RegenRate = (1 / 2), 
-								Count = 25, 
-
-								RareResources = {
-									IronOre = {					
-										AvailablityPct = 80,
-										Count = 20, 
-									},
-								}
-							},
-						},		
-						{
-							Region = "BotJungle",
-							Rock = 
-							{								
-								RegenRate = (1 / 2), 
-								Count = 25, 
-
-								RareResources = {
-									IronOre = {					
-										AvailablityPct = 80,
-										Count = 20, 
-									},
-								}
-							},
-						},		
-						{
-							Region = "BotJungle",
-							Rock = 
-							{								
-								RegenRate = (1 / 2), 
-								Count = 25, 
-
-								RareResources = {
-									IronOre = {					
-										AvailablityPct = 60,
-										Count = 20, 
-									},
-									CopperOre = {
-										AvailablityPct = 20,
-										Count = 12, 
-									},
-									BronzeOre = {
-										AvailablityPct = 10,
-										Count = 12, 
-									},
-									SteelOre = {
-										AvailablityPct = 7,
-										Count = 12, 
-									},
-									ObsidianOre = {
-										AvailablityPct = 3,
-										Count = 12, 
-									},
-								}
-							},
-						},		
-						{
-							-- Global values
-							Tree = {
-								RegenRate = (1 / 2), 
-								Count = 15, 
-
-								RareResources = {
-									Ash = {					
-										AvailablityPct = 20,
-										Count = 8,
-									},
-								}
-							},
-							BlackForestTree = 
-							{								
-								RegenRate = (1 / 2), 
-								Count = 15, 
-
-								RareResources = {
-									BlightWood = {					
-										AvailablityPct = 10,
-										Count = 8, 
-									},
-								}
-							},
-							Rock = 
-							{								
-								RegenRate = (1 / 2), 
-								Count = 25, 
-
-								RareResources = {
-									IronOre = {					
-										AvailablityPct = 10,
-										Count = 20, 
-									},
-								}
-							},
-						},						
-					},
 					SpawnedSources = 
 					{						
-						{ MaxCount = 5, Region = "BotJungle" ,     Resource = "Moss"},
-						{ MaxCount = 3, Region = "BotJungle",   Resource = "Moss"},
-						{ MaxCount = 2, Region = "BotJungle",   Resource = "Moss"},
-						{ MaxCount = 4, Region = "BotJungle" ,     Resource = "Ginseng"},
-						{ MaxCount = 1, Region = "BotJungle",   Resource = "Ginseng"},
-						{ MaxCount = 2, Region = "BotJungle",   Resource = "Ginseng"},
+						{ MaxCount = 13, Region = "BotJungle" ,     Resource = "Moss"},
+						{ MaxCount = 14, Region = "BotJungle" ,     Resource = "Ginseng"},
 						{ MaxCount = 7, Region = "BotJungle",      Resource = "LemonGrass" },
-						{ MaxCount = 7, Region = "BotJungle",      Resource = "LemonGrass" },
-						{ MaxCount = 5, Region = "BotJungle",      Resource = "LemonGrass" },
-						{ MaxCount = 3, Region = "BotJungle",      Resource =  "Mushrooms"},
-						{ MaxCount = 2, Region = "BotJungle",      Resource =  "Mushrooms"},
-						{ MaxCount = 4, Region = "BotJungle", Resource =  "Mushrooms"},
-						{ MaxCount = 3,  Region = "BotJungle",    Resource =  "Cotton"},
-						{ MaxCount = 4,  Region = "BotJungle",    Resource =  "Cotton"},
-						{ MaxCount = 3, Region = "BotJungle" ,     Resource = "Cotton"},
+						{ MaxCount = 10, Region = "BotJungle", Resource =  "Mushrooms"},
+						{ MaxCount = 8,  Region = "BotJungle",    Resource =  "Cotton"},
+						{ MaxCount = 20,  Region = "EmeraldCotton",    Resource =  "Cotton"},
+
 
 					},
 				}
@@ -144,10 +35,11 @@
 			<Initializer>	
 			{
 					SpawnInfo = {
-						{ Count = 500, TemplateId =  "rabbit", Region = "BotJungle" }, 
-						{ Count = 500, TemplateId =  "rabid_wolf", Region = "BotJungle" }, 
-						{ Count = 500, TemplateId =  "scorpion", Region = "BotJungle" }, 
-						{ Count = 500, TemplateId =  "viper", Region = "BotJungle" }, 
+						{ Count = 15, TemplateId =  "rabbit", Region = "BotJungle" }, 
+						{ Count = 4, TemplateId =  "rabbit", Region = "EmeraldCotton" }, 
+						{ Count = 15, TemplateId =  "rabid_wolf", Region = "BotJungle" }, 
+						{ Count = 15, TemplateId =  "scorpion", Region = "BotJungle" }, 
+						{ Count = 15, TemplateId =  "viper", Region = "BotJungle" }, 
 					},
 			}	
 			</Initializer>		

@@ -2,7 +2,7 @@
 <ObjectTemplate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ClientId>1</ClientId>
 	<Hue>176</Hue>
-	<Name>Jonas the Trader</Name>
+	<Name>Beginanew the hunter</Name>
 	<ObjectVariableComponent>
 		<StringVariable Name="MobileTeamType">Villagers</StringVariable>
 		<DoubleVariable Name="BaseHealth">192</DoubleVariable>
@@ -60,34 +60,34 @@
 						},
 						{
 							Template = "torch",
-							Price = 0,
+							Price = 15,
 							Amount = 50,
 							RelativeLoc = "-1.51416, 0.7575722, -1.938354",
 							Rotation = "359.3423, 302.1366, 0.3359878",
 							UnlimitedStock = false,
 						},
 						{
+							Template = "item_mead",
+							Price = 3,
+							Amount = 50,
+							RelativeLoc = "2, 0.7575722, -1.2313214",
+							Rotation = "359.3423, 302.1366, 0.3359878",
+							UnlimitedStock = false,
+						},
+						{
 							Template = "bandage",
-							Price = 0,
+							Price = 21,
 							Amount = 50,
 							RelativeLoc = "1.180176, 0.7249985, -1.552673",
 							Rotation = "0, 149.9997, 0",
 							UnlimitedStock = false,
 						},
 						{
-							Template = "rune_blank",
-							Price = 0,
-							Amount = 20,
+							Template = "tool_hunting_knife",
+							Price = 15,
+							Amount = 2,
 							RelativeLoc = "1.8396, 0.7290001, -1.391296",
 							Rotation = "0, 339.9998, 0",
-							UnlimitedStock = false,
-						},
-						{
-							Template = "map_barren_lands",
-							Price = 200,
-							Amount = 50,
-							RelativeLoc = "-0.5908203, 0.6965733, -1.753479",
-							Rotation = "0, 137.4364, 0",
 							UnlimitedStock = false,
 						},
 					},
