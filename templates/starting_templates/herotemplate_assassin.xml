@@ -12,10 +12,14 @@
 			<Initializer>
 				{
 					Stats = { Str=15, Agi=50, Int=25, Con=10, Wis=10, Will=25 },
+					Skills = 
+					{ 
+					Piercing=50, 
+					},
 					EquipTable =
 					{
 						Backpack = { "backpack" },
-						RightHand = { "weapon_dagger" },
+						RightHand = { "Assassin_BladeOfShadows" },
 						Legs = { "armor_assassin_leggings" },
 						Chest = { "armor_assassin_chest" },
 						Helm = { "armor_assassin_helm" },

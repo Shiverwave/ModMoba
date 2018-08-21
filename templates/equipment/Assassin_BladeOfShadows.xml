@@ -1,0 +1,10 @@
+<ObjectTemplate>
+  <Name>[999999]Shiroi Kiba's Blade of Shadows[111111]</Name>
+	<ClientId>855</ClientId>
+	<SharedStateEntry name="Weight" type="int" value="1"/>
+	<ObjectVariableComponent>			
+		<StringVariable Name="WeaponType">BladeOfShadows</StringVariable>
+		<StringVariable Name="WeaponClass">ShadowDagger</StringVariable>
+		<DoubleVariable Name="MaxDurability">100</DoubleVariable>
+	</ObjectVariableComponent>
+</ObjectTemplate>

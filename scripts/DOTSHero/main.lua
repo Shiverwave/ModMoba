@@ -27,7 +27,7 @@ function init(modLoader)
         },
         
         overrideScripts = {
-			--{vanilla = "globals.static_data.equipmentstats", override = "DOTS_equipmentstats"},
+			{vanilla = "globals.static_data.equipmentstats", override = "DOTS_equipmentstats"},
 			--{vanilla = "globals.static_data.weapon_abilities.weapons", override = "DOTS_weapons"},
 			--{vanilla = "globals.static_data.spells", override = "DOTS_spells"},
         }

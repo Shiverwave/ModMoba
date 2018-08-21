@@ -16,3 +16,20 @@ EquipmentStats.BaseWeaponStats.Crysknife = {
 	SecondaryAbility = "Worm",
 }
 --]]
+
+EquipmentStats.BaseWeaponClass.ShadowDagger = {
+			Accuracy = -5,
+			Critical = 225,
+			Variance = 0.05,
+			WeaponSkill = "PiercingSkill",
+			WeaponDamageType = "Piercing",
+			WeaponHitType = "Melee",
+	}
+EquipmentStats.BaseWeaponStats.BladeOfShadows = {
+		WeaponClass = "ShadowDagger",
+			Attack = 41,
+			MinSkill = 0,
+			Speed = 1.5,
+			PrimaryAbility = "Stab",
+			SecondaryAbility = "Bleed",
+	}
