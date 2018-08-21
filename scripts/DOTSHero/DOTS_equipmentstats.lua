@@ -35,6 +35,15 @@ EquipmentStats.BaseWeaponClass.MagicBow = {
 			TwoHandedWeapon = true,
 			Range = 10,
 	}
+EquipmentStats.BaseWeaponClass.BoStaff = {
+			Accuracy = 0,
+			Critical = 0,
+			Variance = 0.05,
+			WeaponSkill = "BashingSkill",
+			WeaponDamageType = "Bow",
+			WeaponHitType = "Bashing",
+			TwoHandedWeapon = true,
+	}
 EquipmentStats.BaseWeaponStats.BladeOfShadows = {
 		WeaponClass = "ShadowDagger",
 			Attack = 41,
@@ -50,4 +59,12 @@ EquipmentStats.BaseWeaponStats.BowOfPerception = {
 			Speed = 1.5,
 			PrimaryAbility = "Power",
 			SecondaryAbility = "DoubleShot",
+	}
+EquipmentStats.BaseWeaponStats.StaffOfBalance = {
+		WeaponClass = "BoStaff",
+			Attack = 41,
+			MinSkill = 0,
+			Speed = 1.5,
+			PrimaryAbility = "Stun",
+			SecondaryAbility = "Stab",
 	}
