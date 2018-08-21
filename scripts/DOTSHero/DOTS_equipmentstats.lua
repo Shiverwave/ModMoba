@@ -25,6 +25,16 @@ EquipmentStats.BaseWeaponClass.ShadowDagger = {
 			WeaponDamageType = "Piercing",
 			WeaponHitType = "Melee",
 	}
+EquipmentStats.BaseWeaponClass.MagicBow = {
+			Accuracy = 0,
+			Critical = 0,
+			Variance = 0.05,
+			WeaponSkill = "ArcherySkill",
+			WeaponDamageType = "Bow",
+			WeaponHitType = "Ranged",
+			TwoHandedWeapon = true,
+			Range = 10,
+	}
 EquipmentStats.BaseWeaponStats.BladeOfShadows = {
 		WeaponClass = "ShadowDagger",
 			Attack = 41,
@@ -32,4 +42,12 @@ EquipmentStats.BaseWeaponStats.BladeOfShadows = {
 			Speed = 1.5,
 			PrimaryAbility = "Stab",
 			SecondaryAbility = "Bleed",
+	}
+EquipmentStats.BaseWeaponStats.BowOfPerception = {
+		WeaponClass = "MagicBow",
+			Attack = 41,
+			MinSkill = 0,
+			Speed = 1.5,
+			PrimaryAbility = "Power",
+			SecondaryAbility = "DoubleShot",
 	}
