@@ -1,9 +1,9 @@
 <ObjectTemplate>
-  <Name>[999999]Raargh's Sword of Pain[111111]</Name>
-	<ClientId>1472</ClientId>
+  <Name>[999999]Raargh's Colossus Shield[111111]</Name>
+	<ClientId>127</ClientId>
 	<SharedStateEntry name="Weight" type="int" value="4"/>
 	<ObjectVariableComponent>			
-		<StringVariable Name="WeaponType">SwordOfPain</StringVariable>
+		<StringVariable Name="WeaponType">ColossusShield</StringVariable>
 		<DoubleVariable Name="MaxDurability">100</DoubleVariable>
 	</ObjectVariableComponent>
 </ObjectTemplate>

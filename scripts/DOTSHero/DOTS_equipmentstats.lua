@@ -61,6 +61,14 @@ EquipmentStats.BaseWeaponClass.CrookCruel = {
 			WeaponDamageType = "Bashing",
 			WeaponHitType = "Melee",
 	}
+EquipmentStats.BaseWeaponClass.RaarghSword = {
+			Accuracy = 0,
+			Critical = 80,
+			Variance = 0.10,
+			WeaponSkill = "SlashingSkill",
+			WeaponDamageType = "Bashing",
+			WeaponHitType = "Melee",
+	}
 	
 	
 	
@@ -103,4 +111,18 @@ EquipmentStats.BaseWeaponStats.ScepterOfMagic = {
 			Speed = 1.5,
 			PrimaryAbility = "Focus",
 			SecondaryAbility = "Concus",
+	}
+	EquipmentStats.BaseWeaponStats.SwordOfPain = {
+		WeaponClass = "RaarghSword",
+			Attack = 41,
+			MinSkill = 0,
+			Speed = 1.5,
+			PrimaryAbility = "Bash",
+			SecondaryAbility = "Slash",
+	}
+	
+	EquipmentStats.BaseShieldStats.ColossusShield = {
+			BaseBlockChance = 20,
+			ArmorRating = 90,
+			MinSkill = 0,
 	}

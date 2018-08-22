@@ -18,8 +18,8 @@
 								   Chest = { "armor_brigandine_tunic" },
 								   Legs = { "armor_brigandine_leggings" },
 								   Head = { "armor_chain_helm" },
-			                       RightHand = { "weapon_longsword" },
-			                       LeftHand = { "shield_buckler" },
+			                       RightHand = { "Warrior_SwordOfPain" },
+			                       LeftHand = { "Warrior_ColossusShield" },
 			                     },
                     LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,                    	
