@@ -17,7 +17,8 @@
 					EquipTable = {
 								   Chest = { {"clothing_tattered_shirt_chest","8F690A"} },
 			                       Legs = { {"clothing_tattered_legs","0xFF888888" }    }, 
-			                       RightHand = { "tool_crook" }
+			                       RightHand = { "Tamer_CrookOfCruelty" }
+								   LeftHand = { "spellbook_tamer" },
 			                     },
                     LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,

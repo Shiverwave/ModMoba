@@ -23,7 +23,7 @@
 						Legs = { "clothing_shorts_legs" },
 						Head = {"clothing_mage_hat_helm"},
 						LeftHand = { "Mage_ScepterOfMagic" },
-						RightHand = { "spellbook_noob" },
+						RightHand = { "spellbook_mage" },
 			            Backpack = { "backpack"},
 					},
 					LootTables = {
@@ -37,7 +37,7 @@
                     	}
                     },
                     HotbarActions = {
-                    	{ Slot=1, Type="Spell", Name="Heal"},
+                    	{ Slot=1, Type="Spell", Name="Fireball"},
                     	{ Slot=2, Type="Spell", Name="Ruin"},
                     	{ Slot=21, Type="Object", Name="spellbook_noob"},
                     	{ Slot=22, Type="Object", Name="tool_hunting_knife"},
