@@ -18,7 +18,7 @@
 								   Chest = { {"clothing_chest_thief","8F690A"} },
 								   Legs = { "clothing_legs_pants" },
 								   Head = { {"clothing_bandit_hood_helm","8F690A"} },
-			                       RightHand = { "weapon_shortbow" },
+			                       RightHand = { "Archer_BowOfPerception" },
 								   Backpack = { "backpack"}
 			                     },
                     LootTables = {
