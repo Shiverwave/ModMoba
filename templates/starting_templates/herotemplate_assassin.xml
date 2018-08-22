@@ -11,7 +11,7 @@
 		<LuaModule Name="player">
 			<Initializer>
 				{
-					Stats = { Str=15, Agi=50, Int=25, Con=10, Wis=10, Will=25 },
+					Stats = { Str=35, Agi=50, Int=25, Con=25, Wis=10, Will=25 },
 					Skills = 
 					{ 
 					Piercing=50, 

@@ -17,6 +17,7 @@ EquipmentStats.BaseWeaponStats.Crysknife = {
 }
 --]]
 
+--Blade of Shadows EquipmentStats
 EquipmentStats.BaseWeaponClass.ShadowDagger = {
 			Accuracy = -5,
 			Critical = 225,
