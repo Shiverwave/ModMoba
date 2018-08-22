@@ -1,6 +1,6 @@
 <ObjectTemplate>
   <Name>[999999]Tarriel's Scepter of Magic[111111]</Name>
-	<ClientId>1518</ClientId>
+	<ClientId>920</ClientId>
 	<Color>0x964B00</Color>
 	<SharedStateEntry name="Weight" type="int" value="4"/>
 	<ObjectVariableComponent>			

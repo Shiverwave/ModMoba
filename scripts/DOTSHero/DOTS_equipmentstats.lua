@@ -53,7 +53,7 @@ EquipmentStats.BaseWeaponClass.Scepter = {
 			WeaponDamageType = "Bashing",
 			WeaponHitType = "Melee",
 	}
-EquipmentStats.BaseWeaponClass.Crook = {
+EquipmentStats.BaseWeaponClass.CrookCruel = {
 			Accuracy = 5,
 			Critical = 0,
 			Variance = 0.10,
@@ -89,18 +89,18 @@ EquipmentStats.BaseWeaponStats.StaffOfBalance = {
 			SecondaryAbility = "Stab",
 	}
 EquipmentStats.BaseWeaponStats.CrookOfCruelty = {
-		WeaponClass = "Crook",
+		WeaponClass = "CrookCruel",
 			Attack = 41,
 			MinSkill = 0,
 			Speed = 1.5,
 			PrimaryAbility = "Stun",
-			SecondaryAbility = "StunPunch",
+			SecondaryAbility = "Tame",
 	}
 EquipmentStats.BaseWeaponStats.ScepterOfMagic = {
 		WeaponClass = "Scepter",
 			Attack = 41,
 			MinSkill = 0,
 			Speed = 1.5,
-			PrimaryAbility = "Power",
+			PrimaryAbility = "Focus",
 			SecondaryAbility = "Concus",
 	}

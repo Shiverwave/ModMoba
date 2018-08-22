@@ -22,7 +22,9 @@
 						Chest = { "clothing_simple_robe" },
 						Legs = { "clothing_shorts_legs" },
 						Head = {"clothing_mage_hat_helm"},
-						LeftHand = { "weapon_staff" },
+						LeftHand = { "Mage_ScepterOfMagic" },
+						RightHand = { "spellbook_noob" },
+			            Backpack = { "backpack"},
 					},
 					LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,
