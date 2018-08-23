@@ -69,7 +69,15 @@ EquipmentStats.BaseWeaponClass.RaarghSword = {
 			WeaponDamageType = "Bashing",
 			WeaponHitType = "Melee",
 	}
-	
+EquipmentStats.BaseWeaponClass.PickOfAxing = {
+			Accuracy = -4,
+			Critical = 0,
+			Speed = 2.5,
+			Variance = 0,
+			WeaponSkill = "PiercingSkill",
+			WeaponDamageType = "Bashing",
+			WeaponHitType = "Melee",
+		},
 	
 	
 EquipmentStats.BaseWeaponStats.BladeOfShadows = {
@@ -112,7 +120,7 @@ EquipmentStats.BaseWeaponStats.ScepterOfMagic = {
 			PrimaryAbility = "Focus",
 			SecondaryAbility = "Concus",
 	}
-	EquipmentStats.BaseWeaponStats.SwordOfPain = {
+EquipmentStats.BaseWeaponStats.SwordOfPain = {
 		WeaponClass = "RaarghSword",
 			Attack = 41,
 			MinSkill = 0,
@@ -120,8 +128,16 @@ EquipmentStats.BaseWeaponStats.ScepterOfMagic = {
 			PrimaryAbility = "Bash",
 			SecondaryAbility = "Slash",
 	}
+EquipmentStats.BaseWeaponsStats.PickOfPower = {
+			WeaponClass = "PickOfAxing",
+			Attack = 41,
+			MinSkill = 0,
+			PrimaryAbility = "Mine",
+			TwoHandedWeapon = true,
+			Speed = 3,
+	}
 	
-	EquipmentStats.BaseShieldStats.ColossusShield = {
+EquipmentStats.BaseShieldStats.ColossusShield = {
 			BaseBlockChance = 20,
 			ArmorRating = 90,
 			MinSkill = 0,
