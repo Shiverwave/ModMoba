@@ -53,7 +53,7 @@ EquipmentStats.BaseWeaponClass.Scepter = {
 			WeaponDamageType = "Bashing",
 			WeaponHitType = "Melee",
 	}
-EquipmentStats.BaseWeaponClass.Crook = {
+EquipmentStats.BaseWeaponClass.CrookCruel = {
 			Accuracy = 5,
 			Critical = 0,
 			Variance = 0.10,
@@ -61,7 +61,23 @@ EquipmentStats.BaseWeaponClass.Crook = {
 			WeaponDamageType = "Bashing",
 			WeaponHitType = "Melee",
 	}
-	
+EquipmentStats.BaseWeaponClass.RaarghSword = {
+			Accuracy = 0,
+			Critical = 80,
+			Variance = 0.10,
+			WeaponSkill = "SlashingSkill",
+			WeaponDamageType = "Bashing",
+			WeaponHitType = "Melee",
+	}
+EquipmentStats.BaseWeaponClass.PickOfAxing = {
+			Accuracy = -4,
+			Critical = 0,
+			Speed = 2.5,
+			Variance = 0,
+			WeaponSkill = "PiercingSkill",
+			WeaponDamageType = "Bashing",
+			WeaponHitType = "Melee",
+		},
 	
 	
 EquipmentStats.BaseWeaponStats.BladeOfShadows = {
@@ -89,18 +105,40 @@ EquipmentStats.BaseWeaponStats.StaffOfBalance = {
 			SecondaryAbility = "Stab",
 	}
 EquipmentStats.BaseWeaponStats.CrookOfCruelty = {
-		WeaponClass = "Crook",
+		WeaponClass = "CrookCruel",
 			Attack = 41,
 			MinSkill = 0,
 			Speed = 1.5,
 			PrimaryAbility = "Stun",
-			SecondaryAbility = "StunPunch",
+			SecondaryAbility = "Tame",
 	}
 EquipmentStats.BaseWeaponStats.ScepterOfMagic = {
 		WeaponClass = "Scepter",
 			Attack = 41,
 			MinSkill = 0,
 			Speed = 1.5,
-			PrimaryAbility = "Power",
+			PrimaryAbility = "Focus",
 			SecondaryAbility = "Concus",
+	}
+EquipmentStats.BaseWeaponStats.SwordOfPain = {
+		WeaponClass = "RaarghSword",
+			Attack = 41,
+			MinSkill = 0,
+			Speed = 1.5,
+			PrimaryAbility = "Bash",
+			SecondaryAbility = "Slash",
+	}
+EquipmentStats.BaseWeaponsStats.PickOfPower = {
+			WeaponClass = "PickOfAxing",
+			Attack = 41,
+			MinSkill = 0,
+			PrimaryAbility = "Mine",
+			TwoHandedWeapon = true,
+			Speed = 3,
+	}
+	
+EquipmentStats.BaseShieldStats.ColossusShield = {
+			BaseBlockChance = 20,
+			ArmorRating = 90,
+			MinSkill = 0,
 	}

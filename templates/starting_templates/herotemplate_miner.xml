@@ -17,7 +17,7 @@
 					EquipTable = {
 								   Chest = { { "clothing_chest_blacksmith" } },
 								   Head = { "robe_padded_helm" },
-			                       RightHand = { "tool_mining_pick" },
+			                       RightHand = { "Miner_PickOfPower" },
 			                       Legs = {"clothing_legs_thief"},
 			                       Backpack = { "backpack"}
 			                     },

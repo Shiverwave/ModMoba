@@ -13,11 +13,13 @@
 			<Initializer>
 				{ 
 					Stats = { Str=20, Agi=20, Int=20, Con=30, Wis=20, Will=10 },
-					Skills = { },
+					Skills = { AnimalTamingSkill=25, AnimalLoreSkill },
 					EquipTable = {
 								   Chest = { {"clothing_tattered_shirt_chest","8F690A"} },
 			                       Legs = { {"clothing_tattered_legs","0xFF888888" }    }, 
-			                       RightHand = { "tool_crook" }
+			                       RightHand = { "tool_crook" },
+								   LeftHand = { "spellbook_tamer" },
+									Backpack = { "backpack"},
 			                     },
                     LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,
@@ -29,6 +31,7 @@
                     	}
                     },
                     HotbarActions = {
+					    { Slot=1, Type="Spell", Name="Heal"},
                     	{ Slot=21, Type="Object", Name="tool_crook"},
                     	{ Slot=22, Type="Object", Name="weapon_kryss"},
                     	{ Slot=23, Type="Object", Name="tool_hunting_knife"},
