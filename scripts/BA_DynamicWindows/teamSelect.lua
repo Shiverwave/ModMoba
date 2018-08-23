@@ -22,11 +22,11 @@ RegisterEventHandler(EventType.DynamicWindowResponse,"teamSelection",
 			action = returnId
 			if(action == "Team1") then
 				this:SystemMessage("Adding "..this:GetName().." to Team Garnet...")
-				local MobaTeam = 1
+				this:SetObjVar("MobaTeam", 1)
 			--set this:player to team garnet - dont think this exists in the game right now. ie; temp_twotowers_teammaker.lua is not functional.
 			elseif(action == 'Team2') then
 				this:SystemMessage("Adding "..this:GetName().." to Team Emerald...")
-				local MobaTeam = 2
+				this:SetObjVar("MobaTeam", 2)
 			--set this:player to team emerald
 		end
 	end
