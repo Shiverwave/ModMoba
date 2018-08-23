@@ -15,10 +15,11 @@
 					Stats = { Str=30, Agi=30, Int=10, Con=10, Wis=10, Will=10 },
 					Skills = { },
 					EquipTable = { 
-								   Chest = { "clothing_chest_beggar" },
-								   Legs = { "clothing_legs_beggar" },
-			                       RightHand = { "weapon_longsword" },
-			                       LeftHand = { "shield_buckler" },
+								   Chest = { "armor_brigandine_tunic" },
+								   Legs = { "armor_brigandine_leggings" },
+								   Head = { "armor_chain_helm" },
+			                       RightHand = { "Warrior_SwordOfPain" },
+			                       LeftHand = { "Warrior_ColossusShield" },
 			                     },
                     LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,                    	

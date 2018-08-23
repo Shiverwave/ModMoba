@@ -21,7 +21,7 @@
 								   Head = { "armor_cultist_king_helm" },
 								   Legs = { "armor_fullplate_leggings" },
 			                       RightHand = { "weapon_shadowblade" },
-			                       LeftHand = { "shield_savafe" },
+			                       LeftHand = { "shield_savage" },
 			                     },
                     LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,                    	

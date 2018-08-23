@@ -1,6 +1,6 @@
 
 -- The following require has been automatically added for the module manager.
-require 'default:scriptcommands'
+require 'default:globals.static_data.equipmentstats'
 
 -- The following require has been automatically added for the module manager.
-require 'BA_DynamicWindows.BA_scriptcommands'
+require 'DOTSHero.DOTS_equipmentstats'

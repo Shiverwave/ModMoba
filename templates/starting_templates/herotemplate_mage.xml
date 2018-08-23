@@ -19,10 +19,12 @@
 					Manifestation=50,
 					},	
 					EquipTable = {
-						Chest = { "clothing_long_sleeve_shirt_chest" },
+						Chest = { "clothing_simple_robe" },
 						Legs = { "clothing_shorts_legs" },
 						Head = {"clothing_mage_hat_helm"},
-						LeftHand = { "weapon_staff" },
+						LeftHand = { "Mage_ScepterOfMagic" },
+						RightHand = { "spellbook_mage" },
+			            Backpack = { "backpack"},
 					},
 					LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,
@@ -35,7 +37,7 @@
                     	}
                     },
                     HotbarActions = {
-                    	{ Slot=1, Type="Spell", Name="Heal"},
+                    	{ Slot=1, Type="Spell", Name="Fireball"},
                     	{ Slot=2, Type="Spell", Name="Ruin"},
                     	{ Slot=21, Type="Object", Name="spellbook_noob"},
                     	{ Slot=22, Type="Object", Name="tool_hunting_knife"},
