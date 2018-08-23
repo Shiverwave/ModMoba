@@ -1,11 +1,11 @@
 <ObjectTemplate>
-  <Name>[999999]Gearalt's Pick of Power[111111]</Name>
+  <Name>[999999]Gearalt's Ultimate Pick of Power[111111]</Name>
 	<ClientId>193</ClientId>
 	<Hue>100</Hue>
-	<Color>0x663300</Color>
+	<Color>0x7e1dfb</Color>
 	<SharedStateEntry name="Weight" type="int" value="4"/>
 	<ObjectVariableComponent>			
-		<StringVariable Name="WeaponType">PickOfPower</StringVariable>
+		<StringVariable Name="WeaponType">UltimatePickOfPower</StringVariable>
 		<DoubleVariable Name="MaxDurability">100</DoubleVariable>
 	</ObjectVariableComponent>
 </ObjectTemplate>
