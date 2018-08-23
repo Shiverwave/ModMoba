@@ -77,7 +77,7 @@ EquipmentStats.BaseWeaponClass.PickOfAxing = {
 			WeaponSkill = "PiercingSkill",
 			WeaponDamageType = "Bashing",
 			WeaponHitType = "Melee",
-		},
+		}
 	
 	
 EquipmentStats.BaseWeaponStats.BladeOfShadows = {
@@ -128,7 +128,7 @@ EquipmentStats.BaseWeaponStats.SwordOfPain = {
 			PrimaryAbility = "Bash",
 			SecondaryAbility = "Slash",
 	}
-EquipmentStats.BaseWeaponsStats.PickOfPower = {
+EquipmentStats.BaseWeaponStats.PickOfPower = {
 			WeaponClass = "PickOfAxing",
 			Attack = 41,
 			MinSkill = 0,
