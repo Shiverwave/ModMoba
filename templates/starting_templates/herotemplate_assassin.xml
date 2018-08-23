@@ -1,6 +1,6 @@
 <ObjectTemplate>
 	<TemplateName>Shiro-kiba the Assassin</TemplateName>
-	<ClientId>1140</ClientId>
+	<ClientId>1</ClientId>
 	<Hue>176</Hue>
 	<MobileComponent>
 		<BaseRunSpeed>1.05</BaseRunSpeed>
