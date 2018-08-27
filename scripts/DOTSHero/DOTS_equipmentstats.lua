@@ -78,7 +78,15 @@ EquipmentStats.BaseWeaponClass.PickOfAxing = {
 			WeaponDamageType = "Bashing",
 			WeaponHitType = "Melee",
 		}
-	
+EquipmentStats.BaseWeaponClass.UltimatePickOfAxing = {
+			Accuracy = 4,
+			Critical = 0,
+			Speed = 1,
+			Variance = 0,
+			WeaponSkill = "PiercingSkill",
+			WeaponDamageType = "Bashing",
+			WeaponHitType = "Melee",
+		}
 	
 EquipmentStats.BaseWeaponStats.BladeOfShadows = {
 		WeaponClass = "ShadowDagger",
@@ -135,6 +143,30 @@ EquipmentStats.BaseWeaponStats.PickOfPower = {
 			PrimaryAbility = "Mine",
 			TwoHandedWeapon = true,
 			Speed = 3,
+	}
+EquipmentStats.BaseWeaponStats.PickOfPower2 = {
+			WeaponClass = "PickOfAxing",
+			Attack = 61.5,
+			MinSkill = 0,
+			PrimaryAbility = "Mine",
+			TwoHandedWeapon = true,
+			Speed = 2,
+	}
+EquipmentStats.BaseWeaponStats.PickOfPower3 = {
+			WeaponClass = "PickOfAxing",
+			Attack = 82,
+			MinSkill = 0,
+			PrimaryAbility = "Mine",
+			TwoHandedWeapon = true,
+			Speed = 1.5,
+	}
+EquipmentStats.BaseWeaponStats.UltimatePickOfPower = {
+			WeaponClass = "UltimatePickOfAxing",
+			Attack = 102.5,
+			MinSkill = 0,
+			PrimaryAbility = "Mine",
+			TwoHandedWeapon = true,
+			Speed = 1,
 	}
 	
 EquipmentStats.BaseShieldStats.ColossusShield = {

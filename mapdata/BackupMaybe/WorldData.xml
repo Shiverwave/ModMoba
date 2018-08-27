@@ -22,4 +22,15 @@
 			<Scale>(20.48297,1,24.22567)</Scale>
 		</RegionBounds>
 	</RegionDefinition>
+	<RegionDefinition>
+		<RegionName>GarnetCotton</RegionName>
+		<RegionBounds>
+			<Rect>[(181.0214,-1.286875,151.3622)(201.4594,-0.3207782,154.6489)(200.8064,-4.453534,178.8218)(180.3684,0.43,175.5351)(181.0214,-1.386875,151.3622)(201.4594,-0.4207782,154.6489)(200.8064,-4.553534,178.8218)(180.3684,0.33,175.5351)]</Rect>
+			<Center>(0,0,0)</Center>
+			<Size>(1,0.1,1)</Size>
+			<Position>(190.9139,0.38,165.092)</Position>
+			<Rotation>(0,356.2289,0)</Rotation>
+			<Scale>(20.48231,1,24.22541)</Scale>
+		</RegionBounds>
+	</RegionDefinition>
 </WorldData>

@@ -17,6 +17,7 @@
 						{ MaxCount = 10, Region = "BotJungle", Resource =  "Mushrooms"},
 						{ MaxCount = 8,  Region = "BotJungle",    Resource =  "Cotton"},
 						{ MaxCount = 20,  Region = "EmeraldCotton",    Resource =  "Cotton"},
+						{ MaxCount = 20,  Region = "GarnetCotton",    Resource =  "Cotton"},
 
 
 					},
