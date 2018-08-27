@@ -13,9 +13,7 @@
 				{
 					Stats = { Str=35, Agi=50, Int=25, Con=25, Wis=10, Will=25 },
 					Skills = 
-					{ 
-					Piercing=50, 
-					},
+					{ Piercing=50, },
 					EquipTable =
 					{
 						Backpack = { "backpack" },
