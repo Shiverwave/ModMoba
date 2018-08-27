@@ -1,10 +1,9 @@
 <ObjectTemplate>
-  <Name>[999999]Shenzu's Bō Of Balance[111111]</Name>
-	<ClientId>1518</ClientId>
-	<Color>0x964B00</Color>
+  <Name>[999999]Raargh's Sword of Pain[111111]</Name>
+	<ClientId>1472</ClientId>
 	<SharedStateEntry name="Weight" type="int" value="4"/>
 	<ObjectVariableComponent>			
-		<StringVariable Name="WeaponType">StaffOfBalance</StringVariable>
+		<StringVariable Name="WeaponType">SwordOfPain</StringVariable>
 		<DoubleVariable Name="MaxDurability">100</DoubleVariable>
 	</ObjectVariableComponent>
 </ObjectTemplate>
