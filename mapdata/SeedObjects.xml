@@ -2,29 +2,111 @@
 <WorldTemplateObjects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Group Name="Main" Exclude="False">
 		<DynamicObject>
-			<Name>SpawnEmerald</Name>
-			<Id>1</Id>
-			<ObjectCreationParams>spawn_position 22.229 0 24.22 0 31.055 0 1 1 1</ObjectCreationParams>
-		</DynamicObject>
-		<DynamicObject>
 			<Name>MapController</Name>
-			<Id>2</Id>
-			<ObjectCreationParams>ModMoba_map_controller 22.889 0 31.569 0 0 0 1 1 1</ObjectCreationParams>
+			<Id>1</Id>
+			<ObjectCreationParams>ModMoba_map_controller 22.888 99.65 31.569 0 0 0 1 1 1</ObjectCreationParams>
 		</DynamicObject>
+	</Group>
+	<Group Name="Emerald" Exclude="False">
 		<DynamicObject>
 			<Name>EmeraldBanker</Name>
-			<Id>3</Id>
-			<ObjectCreationParams>simple_mob_spawner 17.67 0 22.61 0 0 0 1 1 1</ObjectCreationParams>
+			<Id>1</Id>
+			<ObjectCreationParams>simple_mob_spawner 19.04 0.55 25.92 0 0 0 1 1 1</ObjectCreationParams>
 			<ObjVarOverrides>
 				<StringVariable Name="spawnTemplate">cel_merchant_banker</StringVariable>
 			</ObjVarOverrides>
 		</DynamicObject>
 		<DynamicObject>
 			<Name>EmeraldBlacksmith</Name>
-			<Id>4</Id>
-			<ObjectCreationParams>simple_mob_spawner 49.245 0 20.486 0 317.457 0 1 1 1</ObjectCreationParams>
+			<Id>2</Id>
+			<ObjectCreationParams>simple_mob_spawner 49.314 0.314 20.644 0 270.069 0 1 1 1</ObjectCreationParams>
 			<ObjVarOverrides>
-				<StringVariable Name="spawnTemplate">helm_blacksmith</StringVariable>
+				<StringVariable Name="spawnTemplate">barrens_merchant_armorer</StringVariable>
+			</ObjVarOverrides>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>Door</Name>
+			<Id>3</Id>
+			<ObjectCreationParams>tudor_door 20.965 3.059 59.678 0 269.626 0 1 1.147 1.346</ObjectCreationParams>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>EmeraldGeneralStore</Name>
+			<Id>4</Id>
+			<ObjectCreationParams>simple_mob_spawner 16.79 0.418 65.389 0 85.717 0 1 1 1</ObjectCreationParams>
+			<ObjVarOverrides>
+				<StringVariable Name="spawnTemplate">Emerald_general</StringVariable>
+			</ObjVarOverrides>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>EmeraldStables</Name>
+			<Id>5</Id>
+			<ObjectCreationParams>simple_mob_spawner 97.989 0.53 22.742 0 336.971 0 1 1 1</ObjectCreationParams>
+			<ObjVarOverrides>
+				<StringVariable Name="spawnTemplate">helm_stable_master</StringVariable>
+			</ObjVarOverrides>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>EmeraldStableGuard</Name>
+			<Id>6</Id>
+			<ObjectCreationParams>guard_patrol 92.489 0.17 40.08 0 325.419 0 1 1 1</ObjectCreationParams>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>SpawnEmerald</Name>
+			<Id>7</Id>
+			<ObjectCreationParams>spawn_position 22.229 0.892 24.219 0 31.054 0 1 1 1</ObjectCreationParams>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>EmeraldOuterGuard</Name>
+			<Id>8</Id>
+			<ObjectCreationParams>guard_tower_controller 75.569 0.439 101.099 0 33.56 0 1 1 1</ObjectCreationParams>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>EmeraldBaseGuard</Name>
+			<Id>9</Id>
+			<ObjectCreationParams>guard_tower_controller 55.811 0.417 67.885 0 33.56 0 1 1 1</ObjectCreationParams>
+		</DynamicObject>
+	</Group>
+	<Group Name="Garnet" Exclude="False">
+		<DynamicObject>
+			<Name>GarnetBlacksmith</Name>
+			<Id>1</Id>
+			<ObjectCreationParams>simple_mob_spawner 190.286 0.634 150.195 0 359.486 0 1 1 1</ObjectCreationParams>
+			<ObjVarOverrides>
+				<StringVariable Name="spawnTemplate">barrens_merchant_armorer</StringVariable>
+			</ObjVarOverrides>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>GarnetBanker</Name>
+			<Id>2</Id>
+			<ObjectCreationParams>simple_mob_spawner 177.309 0.23 171.61 0 268.279 0 1 1 1</ObjectCreationParams>
+			<ObjVarOverrides>
+				<StringVariable Name="spawnTemplate">cel_merchant_banker</StringVariable>
+			</ObjVarOverrides>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>SpawnGarnet</Name>
+			<Id>3</Id>
+			<ObjectCreationParams>spawn_position 193.27 0.593 186.039 0 253.529 0 1 1 1</ObjectCreationParams>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>GarnetStables</Name>
+			<Id>4</Id>
+			<ObjectCreationParams>simple_mob_spawner 186.99 0.53 102.55 0 308.187 0 1 1 1</ObjectCreationParams>
+			<ObjVarOverrides>
+				<StringVariable Name="spawnTemplate">helm_stable_master</StringVariable>
+			</ObjVarOverrides>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>GarnetStableGuard</Name>
+			<Id>5</Id>
+			<ObjectCreationParams>guard_patrol 168.35 0.17 110.22 0 325.419 0 1 1 1</ObjectCreationParams>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>GarnetdGeneralStore</Name>
+			<Id>6</Id>
+			<ObjectCreationParams>simple_mob_spawner 167.57 0.26 186.33 0 174.106 0 1 1 1</ObjectCreationParams>
+			<ObjVarOverrides>
+				<StringVariable Name="spawnTemplate">Emerald_general</StringVariable>
 			</ObjVarOverrides>
 		</DynamicObject>
 	</Group>

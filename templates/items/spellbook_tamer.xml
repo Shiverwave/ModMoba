@@ -13,8 +13,6 @@
 				{
 					Spells = {
 						Heal = true,
-						Ruin = true,
-						Fireball = true,
 					}
 				}
 			</Initializer>
