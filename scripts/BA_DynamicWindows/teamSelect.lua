@@ -8,7 +8,13 @@ DefaultCommandFuncs= {
 	
 	shop = function()
 	local ShopWindow = DynamicWindow("shopSelection", "Shop", 200, 500)
-	ShopWindow:AddButton(120,20,"purchase","Buy",50,25,"Purchase [name]","",false)
+	for i=1,20 do	
+		local scrollElement = ScrollElement()	
+		scrollElement:AddButton(120,20,"purchase","Buy",50,25,"Purchase [name]","",false)
+		scrollWindow:Add(scrollElement)
+	end
+	local scrollWindow = ScrollWindow(5,5,165,450,40)
+	ShopWindow:AddScrollWindow(scrollWindow)
 	this:OpenDynamicWindow(ShopWindow)
 	end,
 }
