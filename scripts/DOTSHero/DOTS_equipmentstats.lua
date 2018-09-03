@@ -120,7 +120,7 @@ EquipmentStats.BaseWeaponStats.StaffOfBalance = {
 			PrimaryAbility = "Stun",
 			SecondaryAbility = "Stab",
 	}
-EquipmentStats.BaseWeaponStats.CrookOfCruelty = {
+EquipmentStats.BaseWeaponStats.Crook = {
 		WeaponClass = "Tool",
 			Attack = 41,
 			MinSkill = 0,
