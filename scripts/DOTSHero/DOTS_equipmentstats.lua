@@ -74,7 +74,7 @@ EquipmentStats.BaseWeaponClass.PickOfAxing = {
 			Critical = 0,
 			Speed = 2.5,
 			Variance = 0,
-			WeaponSkill = "PiercingSkill",
+			WeaponSkill = "BashingSkill",
 			WeaponDamageType = "Bashing",
 			WeaponHitType = "Melee",
 		}
