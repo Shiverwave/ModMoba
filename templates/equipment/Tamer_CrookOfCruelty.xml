@@ -4,7 +4,7 @@
 	<Color>0x964B00</Color>
 	<SharedStateEntry name="Weight" type="int" value="4"/>
 	<ObjectVariableComponent>			
-		<StringVariable Name="WeaponType">CrookOfCruelty</StringVariable>
+		<StringVariable Name="WeaponType">Crook</StringVariable>
 		<DoubleVariable Name="MaxDurability">100</DoubleVariable>
 	</ObjectVariableComponent>
 </ObjectTemplate>

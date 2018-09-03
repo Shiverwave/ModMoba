@@ -13,20 +13,20 @@
 			<Initializer>
 				{ 
 					Stats = { Str=20, Agi=20, Int=20, Con=30, Wis=20, Will=10 },
-					Skills = { AnimalTaming=25, AnimalLore=25 },
+					Skills = { AnimalTaming=25, AnimalLore=25, Bashing=25 },
 					EquipTable = {
 								   Chest = { {"clothing_tattered_shirt_chest","8F690A"} },
 			                       Legs = { {"clothing_tattered_legs","0xFF888888" }    }, 
-			                       RightHand = { "tool_crook" },
-								   LeftHand = { "spellbook_tamer" },
+			                       RightHand = { "Tamer_CrookOfCruelty" },,
 									Backpack = { "backpack"},
 			                     },
+					SpawnLoot = { true },
                     LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,
                     	{
                     		NumItems = 1,
                     		LootItems = {
-			        			{ Template = "weapon_kryss", Unique = true },
+			        			{ Template = "spellbook_tamer", Unique = true },
 			        		},
                     	}
                     },

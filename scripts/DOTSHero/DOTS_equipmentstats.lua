@@ -96,6 +96,14 @@ EquipmentStats.BaseWeaponStats.BladeOfShadows = {
 			PrimaryAbility = "Stab",
 			SecondaryAbility = "Bleed",
 	}
+EquipmentStats.BaseWeaponStats.ForkCook = {
+		WeaponClass = "Fist",
+			Attack = 10,
+			MinSkill = 0,
+			Speed = 0.25,
+			PrimaryAbility = "Stab",
+			SecondaryAbility = "Bleed",
+	}
 EquipmentStats.BaseWeaponStats.BowOfPerception = {
 		WeaponClass = "MagicBow",
 			Attack = 41,
@@ -112,11 +120,15 @@ EquipmentStats.BaseWeaponStats.StaffOfBalance = {
 			PrimaryAbility = "Stun",
 			SecondaryAbility = "Stab",
 	}
+<<<<<<< HEAD
 EquipmentStats.BaseWeaponStats.CrookOfCruelty = {
+=======
+EquipmentStats.BaseWeaponStats.Crook = {
+>>>>>>> 26ec23341e0a67bb2a7495d1ae547545ea34a8a1
 		WeaponClass = "Tool",
 			Attack = 41,
 			MinSkill = 0,
-			Speed = 1.5,
+			Speed = 2.5,
 			PrimaryAbility = "Stun",
 			SecondaryAbility = "Tame",
 	}
