@@ -23,16 +23,16 @@
 						Legs = { "clothing_shorts_legs" },
 						Head = {"clothing_mage_hat_helm"},
 						LeftHand = { "Mage_ScepterOfMagic" },
-						RightHand = { "spellbook_mage" },
 			            Backpack = { "backpack"},
 					},
+					SpawnLoot = { true },
 					LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,
                     	{
                     		NumItems = 2,
                     		LootItems = {
 			        			{ Template = "reagent_bag_noob", Unique = true },
-			        			{ Template = "spellbook_noob", Unique = true },
+			        			{ Template = "spellbook_mage", Unique = true },
 			        		},
                     	}
                     },

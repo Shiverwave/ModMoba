@@ -21,6 +21,7 @@
 			                       RightHand = { "Archer_BowOfPerception" },
 								   Backpack = { "backpack"}
 			                     },
+					SpawnLoot = { true },
                     LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,
                     	{
