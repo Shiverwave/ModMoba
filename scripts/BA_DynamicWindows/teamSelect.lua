@@ -55,12 +55,14 @@ RegisterEventHandler(EventType.DynamicWindowResponse,"shopSelection",
 		if (returnId == "") then
 			return
 		elseif (returnId ~= nil) then
-			shopTemplateID = tostring(string.match(returnId, "<(.-)>"))
+			shopTemplateID = string.match(returnId, "<(.-)>")
 			itemRow = tonumber(string.match(returnId, "%d+"))
-			DebugMessage("shopTemplateID = _"..shopTemplateID.."_")
-			DebugMessage("itemRow = _"..itemRow.."_")
+			--DebugMessage("shopTemplateID = _"..shopTemplateID.."_")
+			--DebugMessage("itemRow = _"..itemRow.."_")
 			if (CountCoins(user) >= shopItems[itemRow].ItemPrice) then
+				RequestConsumeResource(user,"coins", shopItems[itemRow].ItemPrice, "BuyingFromShopWindow", this)
 				CreateObjInBackpack(user,shopTemplateID,"fromShop")
+				this:SystemMessage("Successfully purchased "..shopItems[itemRow].ItemName.." for "..shopItems[itemRow].ItemPrice.."G. You have "..CountCoins(this).."G Remaining.\n ~Don't forget to equip it!~")
 			else
 				this:SystemMessage("You need "..(shopItems[itemRow].ItemPrice-CountCoins(this)).. " more to purchase "..shopItems[itemRow].ItemName..".")
 				return
