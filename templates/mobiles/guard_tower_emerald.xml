@@ -9,7 +9,8 @@
 	</MobileComponent>				
 	<ObjectVariableComponent>			
 		<DoubleVariable Name="BaseHealth">32</DoubleVariable>
-		<StringVariable Name= "MobileTeamType">Founders</StringVariable>
+		<StringVariable Name= "MobileTeamType">Emerald</StringVariable>
+		<BoolVariable Name="AI-Leash">False</BoolVariable>
 		<BoolVariable Name="IsGuard">false</BoolVariable>
      	<BoolVariable Name="noloot">True</BoolVariable>
 		<DoubleVariable Name="Armor">0</DoubleVariable>
@@ -18,7 +19,7 @@
 		<DoubleVariable Name="Karma">10000</DoubleVariable>
 	</ObjectVariableComponent>					
 	<ScriptEngineComponent>
-		<LuaModule Name="ai_founders_guard">
+		<LuaModule Name="ai_guard_emerald">
 			<Initializer>
 				{ 
 					Stats = { Str=40, Agi=30, Int=21, Wis=10, Wil=10 },
