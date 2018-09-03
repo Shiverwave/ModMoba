@@ -103,9 +103,6 @@ function ValidCombatTarget(attacker, victim, silent)
 	if ( ShouldKarmaProtect(attacker, victim, silent) ) then
 		return false
 	end
-	if (attacker:GetObjVar("NameColorOverride") == victim:GetObjVar("NameColorOverride")) then 
-		return false 
-	end
 
 	-- default to attack everything (sandbox!)
 	return true
@@ -308,3 +305,8 @@ end
 function PlayAttackAnimation(mobile)
 	mobile:PlayAnimation("attack")
 end
+-- The following require has been automatically added for the module manager.
+require 'default:globals.helpers.combat'
+
+-- The following require has been automatically added for the module manager.
+require 'BA_DynamicWindows.BA_combat'

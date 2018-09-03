@@ -27,6 +27,7 @@ function init(modLoader)
         },
 
         overrideScripts = {
+			{vanilla = "globals.helpers.combat", override = "BA_combat"},
             {vanilla = "scriptcommands", override = "BA_scriptcommands"}
         }
     })
