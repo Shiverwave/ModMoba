@@ -1,7 +1,5 @@
-require 'ai_guard'
-require 'incl_faction'
 require 'base_ai_mob'
-
+require 'incl_faction'
 
 AI.Settings.CanConverse = false
 
