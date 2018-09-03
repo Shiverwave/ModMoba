@@ -19,18 +19,18 @@ RegisterEventHandler(EventType.DynamicWindowResponse,"teamSelection",
 			action = returnId
 			if(action == "Team1") then
 				this:SystemMessage("Adding "..this:GetName().." to Team Garnet...")
-				local teamName = this:GetObjVar("Team")
-				local nameColor = COLORS[Green]
-				user:SetObjVar("NameColorOverride",nameColor)
-				user:SendMessage("UpdateName")
-				user:SystemMessage("You have joined the Team Garnet")
+				local nameColor = COLORS["Red"]
+				this:SetObjVar("KarmaProtectionEnabled", false)
+				this:SetObjVar("NameColorOverride",nameColor)
+				this:SendMessage("UpdateName")
+				this:SystemMessage("You have joined the Team Garnet")
 			elseif(action == 'Team2') then
 				this:SystemMessage("Adding "..this:GetName().." to Team Emerald...")
-				local teamName = this:GetObjVar("Team")
-				local nameColor = COLORS[Yellow]
-				user:SetObjVar("NameColorOverride",nameColor)
-				user:SendMessage("UpdateName")
-				user:SystemMessage("You have joined the Team Emerald")
+				local nameColor = COLORS["Green"]
+				this:SetObjVar("KarmaProtectionEnabled", false)
+				this:SetObjVar("NameColorOverride",nameColor)
+				this:SendMessage("UpdateName")
+				this:SystemMessage("You have joined the Team Emerald")
 			end
 	end
 end)

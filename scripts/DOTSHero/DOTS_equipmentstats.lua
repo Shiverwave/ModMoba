@@ -74,7 +74,7 @@ EquipmentStats.BaseWeaponClass.PickOfAxing = {
 			Critical = 0,
 			Speed = 2.5,
 			Variance = 0,
-			WeaponSkill = "PiercingSkill",
+			WeaponSkill = "BashingSkill",
 			WeaponDamageType = "Bashing",
 			WeaponHitType = "Melee",
 		}
@@ -113,7 +113,7 @@ EquipmentStats.BaseWeaponStats.StaffOfBalance = {
 			SecondaryAbility = "Stab",
 	}
 EquipmentStats.BaseWeaponStats.CrookOfCruelty = {
-		WeaponClass = "CrookCruel",
+		WeaponClass = "Tool",
 			Attack = 41,
 			MinSkill = 0,
 			Speed = 1.5,

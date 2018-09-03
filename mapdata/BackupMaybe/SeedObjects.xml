@@ -6,6 +6,14 @@
 			<Id>1</Id>
 			<ObjectCreationParams>ModMoba_map_controller 22.888 99.65 31.569 0 0 0 1 1 1</ObjectCreationParams>
 		</DynamicObject>
+		<DynamicObject>
+			<Name>JungleDemon</Name>
+			<Id>2</Id>
+			<ObjectCreationParams>simple_mob_spawner 142.46 0.81 12.029 0 7.529 0 1 1 1</ObjectCreationParams>
+			<ObjVarOverrides>
+				<StringVariable Name="spawnTemplate">RuinKing</StringVariable>
+			</ObjVarOverrides>
+		</DynamicObject>
 	</Group>
 	<Group Name="Emerald" Exclude="False">
 		<DynamicObject>
@@ -65,6 +73,11 @@
 			<Id>9</Id>
 			<ObjectCreationParams>garnet_tower_controller 55.811 0.417 67.885 0 33.56 0 1 1 1</ObjectCreationParams>
 		</DynamicObject>
+		<DynamicObject>
+			<Name>EmeraldRespawn</Name>
+			<Id>10</Id>
+			<ObjectCreationParams>shrine 28.93 0.43 72.19 0 33.56 0 1 1 1</ObjectCreationParams>
+		</DynamicObject>
 	</Group>
 	<Group Name="Garnet" Exclude="False">
 		<DynamicObject>
@@ -108,6 +121,11 @@
 			<ObjVarOverrides>
 				<StringVariable Name="spawnTemplate">Emerald_general</StringVariable>
 			</ObjVarOverrides>
+		</DynamicObject>
+		<DynamicObject>
+			<Name>GarnetRespawn</Name>
+			<Id>7</Id>
+			<ObjectCreationParams>shrine 142.279 0.44 192.369 0 347.543 0 1 1 1</ObjectCreationParams>
 		</DynamicObject>
 	</Group>
 </WorldTemplateObjects>

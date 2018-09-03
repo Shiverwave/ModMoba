@@ -7946,6 +7946,14 @@
 			</ObjVarOverrides>
 		</DynamicObject>
 	</Group>
+	<!-- CUSTOM STUFF HERE FOR MAP-->
+	<Group Name="RespawnPoint">
+	<DynamicObject>
+			<Name>ResurrectShrineObject</Name>
+			<Id>9</Id>
+			<ObjectCreationParams>shrine 0 0 0 0 0 0 1 1 1</ObjectCreationParams>
+		</DynamicObject>
+	</Group>
 <Group Name="GarnetTower">
 		<Extents>
 			<Rect>[(-7.5,2.831598,-7.5)(7.5,2.831598,-7.5)(7.5,2.831598,7.5)(-7.5,2.831598,7.5)(-7.5,1.831598,-7.5)(7.5,1.831598,-7.5)(7.5,1.831598,7.5)(-7.5,1.831598,7.5)]</Rect>
