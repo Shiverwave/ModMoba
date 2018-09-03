@@ -22,7 +22,7 @@
 					LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,
                     	{
-                    		NumItems = 2,
+                    		NumItems = 4,
                     		LootItems = {
 			        			{ Template = "reagent_bag_noob", Unique = true },
 			        			{ Template = "cooked_stew", Unique = true, StackCount = 15  },
