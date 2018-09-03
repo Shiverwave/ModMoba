@@ -20,7 +20,7 @@ DefaultCommandFuncs= {
 	for i=1,#shopItems do	
 		local scrollElement = ScrollElement()
 		scrollElement:AddLabel(7,22,shopItems[i].ItemName,60)
-		scrollElement:AddButton(120,20,"purchase item:"..shopItems[i].ItemID,shopItems[i].ItemPrice.."G",50,25,"Purchase "..shopItems[i].ItemName.." for "..shopItems[i].ItemPrice.."G","",false)
+		scrollElement:AddButton(120,20,"purchase item<"..shopItems[i].ItemID..">item row:"..i,shopItems[i].ItemPrice.."G",50,25,"Purchase "..shopItems[i].ItemName.." for "..shopItems[i].ItemPrice.."G","",false)
 		scrollWindow:Add(scrollElement)
 	end
 	
@@ -52,15 +52,18 @@ RegisterEventHandler(EventType.DynamicWindowResponse,"teamSelection",
 end)
 RegisterEventHandler(EventType.DynamicWindowResponse,"shopSelection",
 	function (user,returnId)
-		if (returnId ~= nil) then
-			shopTemplateID = string.match(returnId, ":(.*)")
-			itemRow = 1
-			local createFunc = CreateObj
-			DebugMessage(shopTemplateID)
+		if (returnId == "") then
+			return
+		elseif (returnId ~= nil) then
+			shopTemplateID = tostring(string.match(returnId, "<(.-)>"))
+			itemRow = tonumber(string.match(returnId, "%d+"))
+			DebugMessage("shopTemplateID = _"..shopTemplateID.."_")
+			DebugMessage("itemRow = _"..itemRow.."_")
 			if (CountCoins(user) >= shopItems[itemRow].ItemPrice) then
 				CreateObjInBackpack(user,shopTemplateID,"fromShop")
 			else
-				this:SystemMessage("You need "..(shopItems[itemRows.ItemPrice]-CountCoins(this)).. " more to purchase "..shopItems[itemRow].ItemName".")
+				this:SystemMessage("You need "..(shopItems[itemRow].ItemPrice-CountCoins(this)).. " more to purchase "..shopItems[itemRow].ItemName..".")
+				return
 			end
 		end
 	end)
