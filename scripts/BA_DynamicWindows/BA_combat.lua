@@ -103,6 +103,7 @@ function ValidCombatTarget(attacker, victim, silent)
 	if ( ShouldKarmaProtect(attacker, victim, silent) ) then
 		return false
 	end
+	-- Checks to see if victim is of the same team. Determined via colour of name.
 	if (attacker:GetObjVar("NameColorOverride") == victim:GetObjVar("NameColorOverride")) then 
 		return false 
 	end
