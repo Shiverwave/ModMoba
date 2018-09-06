@@ -17,6 +17,7 @@ DefaultCommandFuncs= {
 	shop = function()
 	local ShopWindow = DynamicWindow("shopSelection", "Shop", 220, 500)
 	local scrollWindow = ScrollWindow(5,3,182,450,40)
+--The following for loop creates a box for each row in the shopItems list and assigning it a unique button output.
 	for i=1,#shopItems do	
 		local scrollElement = ScrollElement()
 		scrollElement:AddLabel(7,22,shopItems[i].ItemName,60)
@@ -50,14 +51,16 @@ RegisterEventHandler(EventType.DynamicWindowResponse,"teamSelection",
 			end
 	end
 end)
+--This Functions handles the logic behind the shop window User Interface
 RegisterEventHandler(EventType.DynamicWindowResponse,"shopSelection",
 	function (user,returnId)
-		if (returnId == "") then
+	
+		if (returnId == "") then --if no message is received
 			return
-		elseif (returnId ~= nil) then
-			shopTemplateID = string.match(returnId, "<(.-)>")
-			itemRow = tonumber(string.match(returnId, "%d+"))
-			--DebugMessage("shopTemplateID = _"..shopTemplateID.."_")
+		elseif (returnId ~= nil) then --if a message is recieved
+			shopTemplateID = string.match(returnId, "<(.-)>") --extract the templateID from the received string
+			itemRow = tonumber(string.match(returnId, "%d+")) --extract the itemRow from the recieved string
+			DebugMessage("shopTemplateID = _"..shopTemplateID.."_")
 			--DebugMessage("itemRow = _"..itemRow.."_")
 			if (CountCoins(user) >= shopItems[itemRow].ItemPrice) then
 				RequestConsumeResource(user,"coins", shopItems[itemRow].ItemPrice, "BuyingFromShopWindow", this)
