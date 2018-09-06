@@ -25,15 +25,13 @@
                     LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,
                     	{
-                    		NumItems = 2,
+                    		NumItems = 1,
                     		LootItems = {
-			        			{ Template = "arrow", Unique = true, StackCount = 1000000 },
-			        			{ Template = "weapon_shortbow", Unique = true },
+			        			{ Template = "arrow", Unique = true, StackCount = 250 },
 			        		},
                     	}
                     },
                     HotbarActions = {
-                    	{ Slot=21, Type="Object", Name="weapon_shortbow"},
                     	{ Slot=22, Type="Object", Name="tool_hunting_knife"},
                     	{ Slot=23, Type="Object", Name="torch"},
                     	{ Slot=25, Type="Object", Name="item_bread"},
