@@ -28,7 +28,7 @@ EquipmentStats.BaseWeaponClass.ShadowDagger = {
 	}
 EquipmentStats.BaseWeaponClass.MagicBow = {
 			Accuracy = 0,
-			Critical = 0,
+			Critical = 0.25,
 			Variance = 0.05,
 			WeaponSkill = "ArcherySkill",
 			WeaponDamageType = "Bow",
