@@ -7,6 +7,7 @@
 MODS = {
 	"BA_DynamicWindows",
 	"DOTSHero",
+	"AG_CreepAI",
    	--Test
 }
 
