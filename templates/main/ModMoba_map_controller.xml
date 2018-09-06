@@ -41,6 +41,8 @@
 						{ Count = 15, TemplateId =  "rabid_wolf", Region = "BotJungle" }, 
 						{ Count = 15, TemplateId =  "scorpion", Region = "BotJungle" }, 
 						{ Count = 15, TemplateId =  "viper", Region = "BotJungle" }, 
+						{ Count = 4, TemplateId =  "ork_warrior", Region = "GarnetOrks" }, 
+						{ Count = 4, TemplateId =  "EmeraldFoodBeetle", Region = "EmeraldBeetle" }, 
 					},
 			}	
 			</Initializer>		
