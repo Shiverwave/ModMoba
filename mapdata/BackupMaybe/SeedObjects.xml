@@ -56,7 +56,7 @@
 		<DynamicObject>
 			<Name>EmeraldStableGuard</Name>
 			<Id>6</Id>
-			<ObjectCreationParams>guard_patrol 92.489 0.17 40.08 0 325.419 0 1 1 1</ObjectCreationParams>
+			<ObjectCreationParams>guard_patrol 81.62 0.17 24.54 0 325.419 0 1 1 1</ObjectCreationParams>
 		</DynamicObject>
 		<DynamicObject>
 			<Name>SpawnEmerald</Name>

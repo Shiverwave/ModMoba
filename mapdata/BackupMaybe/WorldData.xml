@@ -33,4 +33,26 @@
 			<Scale>(20.48231,1,24.22541)</Scale>
 		</RegionBounds>
 	</RegionDefinition>
+	<RegionDefinition>
+		<RegionName>GarnetOrks</RegionName>
+		<RegionBounds>
+			<Rect>[(161.4723,0.1309156,27.2285)(179.0982,0.1309156,30.08701)(178.535,0.1309156,51.11079)(160.9091,0.1309156,48.25229)(161.4723,0.03091526,27.2285)(179.0982,0.03091526,30.08701)(178.535,0.03091526,51.11079)(160.9091,0.03091526,48.25229)]</Rect>
+			<Center>(0,0,0)</Center>
+			<Size>(1,0.1,1)</Size>
+			<Position>(170.0037,0.08091545,39.16965)</Position>
+			<Rotation>(0,356.2289,0)</Rotation>
+			<Scale>(17.66411,1,21.06941)</Scale>
+		</RegionBounds>
+	</RegionDefinition>
+	<RegionDefinition>
+		<RegionName>EmeraldBeetle</RegionName>
+		<RegionBounds>
+			<Rect>[(98.36586,0.1309156,39.52892)(114.0684,0.1309156,31.0277)(126.4624,0.1309156,48.01907)(110.7599,0.1309156,56.52029)(98.36586,0.03091526,39.52892)(114.0684,0.03091526,31.0277)(126.4624,0.03091526,48.01907)(110.7599,0.03091526,56.52029)]</Rect>
+			<Center>(0,0,0)</Center>
+			<Size>(1,0.1,1)</Size>
+			<Position>(112.4141,0.08091545,43.77399)</Position>
+			<Rotation>(0,33.8716,0)</Rotation>
+			<Scale>(17.66403,1,21.06946)</Scale>
+		</RegionBounds>
+	</RegionDefinition>
 </WorldData>
