@@ -8,9 +8,10 @@ shopItems = {
 DefaultCommandFuncs= {
 --The function that deals with displaying the team selection dynamic window.
 	selectTeam = function()
-	local TeamSelectionWindow = DynamicWindow("teamSelection", "Team Selection", 450, 200)
+	local TeamSelectionWindow = DynamicWindow("teamSelection", "Team Selection", 450, 230)
 	TeamSelectionWindow:AddButton(6,20,"Team1","Garnet",200,120,"Join Team Garnet","",true)
 	TeamSelectionWindow:AddButton(223,20,"Team2","Emerald",200,120,"Join Team Emerald","",true)
+	TeamSelectionWindow:AddButton(6,150,"LeaveTeam","Leave Team",417,26,"Leave your Team","",true)
 	this:OpenDynamicWindow(TeamSelectionWindow)
 	end,
 --The function that deals with displaying the shop dynamic window.
@@ -48,6 +49,10 @@ RegisterEventHandler(EventType.DynamicWindowResponse,"teamSelection",
 				this:SetObjVar("NameColorOverride",nameColor)
 				this:SendMessage("UpdateName")
 				this:SystemMessage("You have joined the Team Emerald")
+			elseif(action == 'LeaveTeam') then
+				user:DelObjVar("NameColorOverride")
+				this:SendMessage("UpdateName")
+				this:SystemMessage("You have left your Team")
 			end
 	end
 end)
