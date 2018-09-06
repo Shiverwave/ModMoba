@@ -1,7 +1,10 @@
 require 'base_ai_mob'
-require 'incl_faction'
+--require 'incl_faction'
+--require 'incl_humanloot'
+--require 'incl_combatai'
+--require 'base_ai_npc'
 
-AI.Settings.CanConverse = false
+--[[AI.Settings.CanConverse = false
 
 guardNames = { "Thanuis",
                "Luke",
@@ -133,4 +136,40 @@ function HandleVictimKilled(victim)
     end
 end
 
-OverrideEventHandler( "ai_guard", EventType.Message, "VictimKilled", HandleVictimKilled)
+OverrideEventHandler( "ai_guard", EventType.Message, "VictimKilled", HandleVictimKilled)]]--
+
+--[[if (this:GetObjVar("MyPath") ~= nil) then
+    path = GetPath(this:GetObjVar("MyPath"))
+else
+    path = GetPath("GuardPath")
+end]]
+--[[RegisterEventHandler(EventType.Message,"HasDiedMessage",
+    function ()
+        SetAITarget(nil)
+        AI.ClearAggroList()
+        AI.StateMachine.ChangeState("Dead")
+    end)]]
+	
+function HandleModuleLoaded()
+    --DebugMessage("GUARD LOADED")
+    if (IsFemale(this)) then
+        --guardNames = femaleGuardNames
+    end
+    this:SetName(guardNames[math.random(1, #guardNames)].." the Bouncer")
+
+    --DebugMessage("Creating guard with name of "..this:GetName().."and id of " ..this.Id .." with template name of "..this:GetCreationTemplateId())
+    if( ShouldPatrol() ) then
+        this:SetObjVar("curPathIndex", 1)
+        this:SetObjVar("stopChance", 0)
+        this:SetObjVar("stopDelay", 3000)
+        this:SetObjVar("isRunning", 0)    
+        --DebugMessage("ShouldPatrol")  
+    else
+        this:SetObjVar("homeLoc",this:GetLoc())
+        this:SetObjVar("homeFacing",this:GetFacing())
+        AI.Settings.StationedLeash = true
+        AI.SetSetting("Leash",true)
+		DebugMessage(homeLoc)
+        --DebugMessage("ShouldNotPatrol")  
+    end
+end
