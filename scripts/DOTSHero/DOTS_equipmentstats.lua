@@ -28,7 +28,7 @@ EquipmentStats.BaseWeaponClass.ShadowDagger = {
 	}
 EquipmentStats.BaseWeaponClass.MagicBow = {
 			Accuracy = 0,
-			Critical = 0,
+			Critical = 0.25,
 			Variance = 0.05,
 			WeaponSkill = "ArcherySkill",
 			WeaponDamageType = "Bow",
@@ -106,9 +106,9 @@ EquipmentStats.BaseWeaponStats.ForkCook = {
 	}
 EquipmentStats.BaseWeaponStats.BowOfPerception = {
 		WeaponClass = "MagicBow",
-			Attack = 41,
+			Attack = 20.5,
 			MinSkill = 0,
-			Speed = 1.5,
+			Speed = 1.75,
 			PrimaryAbility = "Power",
 			SecondaryAbility = "DoubleShot",
 	}

@@ -1,7 +1,7 @@
 <ObjectTemplate>
-	<TemplateName>Tarriel the Mage</TemplateName>
+	<TemplateName>Sugma the Necromancer</TemplateName>
 	<ClientId>1</ClientId>
-	<Hue>176</Hue>
+	<Hue>270</Hue>
 	<MobileComponent>
 		<MobileType>Player</MobileType>
 	</MobileComponent>
@@ -12,17 +12,17 @@
 		<LuaModule Name="player">
 			<Initializer>
 				{ 
-					Stats = { Str=15, Agi=15, Int=40, Con=10, Wis=30, Will=30 },
+					Stats = { Str=10, Agi=10, Int=30, Con=10, Wis=40, Will=40 },
 					Skills = 
 					{ 
-					Evocation=50, 
-					Manifestation=50,
+					Evocation=100, 
+					Manifestation=100,
 					},	
 					EquipTable = {
 						Chest = { "clothing_simple_robe" },
 						Legs = { "clothing_shorts_legs" },
 						Head = {"clothing_mage_hat_helm"},
-						LeftHand = { "Mage_ScepterOfMagic" },
+						LeftHand = { "Necro_ScepterOfDeath" },
 			            Backpack = { "backpack"},
 					},
 					SpawnLoot = { true },
@@ -32,13 +32,13 @@
                     		NumItems = 2,
                     		LootItems = {
 			        			{ Template = "reagent_bag_noob", Unique = true },
-			        			{ Template = "spellbook_mage", Unique = true },
+			        			{ Template = "spellbook_necro", Unique = true },
 			        		},
                     	}
                     },
                     HotbarActions = {
-                    	{ Slot=1, Type="Spell", Name="Fireball"},
-                    	{ Slot=2, Type="Spell", Name="Ruin"},
+                    	{ Slot=1, Type="Spell", Name="Poison"},
+                    	{ Slot=2, Type="Spell", Name="Resurrect"},
                     	{ Slot=22, Type="Object", Name="tool_hunting_knife"},
                     	{ Slot=23, Type="Object", Name="torch"},
                     	{ Slot=24, Type="Object", Name="reagent_bag_noob"},

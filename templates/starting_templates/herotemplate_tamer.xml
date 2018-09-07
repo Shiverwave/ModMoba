@@ -15,11 +15,11 @@
 					Stats = { Str=20, Agi=20, Int=20, Con=30, Wis=20, Will=10 },
 					Skills = { AnimalTaming=25, AnimalLore=25, Bashing=25 },
 					EquipTable = {
-								   Chest = { {"clothing_tattered_shirt_chest","8F690A"} },
-			                       Legs = { {"clothing_tattered_legs","0xFF888888" }    }, 
-			                       RightHand = { "Tamer_CrookOfCruelty" },,
-									Backpack = { "backpack"},
-			                     },
+								Chest = {"clothing_tattered_shirt_chest"},
+			                    Legs = {"clothing_tattered_legs"}, 
+			                    RightHand = { "Tamer_CrookOfCruelty" },
+								Backpack = { "backpack"},
+			        },
 					SpawnLoot = { true },
                     LootTables = {
                     	TemplateDefines.LootTable.NewbiePlayer,

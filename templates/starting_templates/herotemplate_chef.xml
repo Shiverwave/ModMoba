@@ -1,6 +1,6 @@
 <ObjectTemplate>
 	<TemplateName>Remy the Chef</TemplateName>
-	<ClientId>20</ClientId>
+	<ClientId>262</ClientId>
 	<Hue>176</Hue>
 	<MobileComponent>
 		<MobileType>Player</MobileType>

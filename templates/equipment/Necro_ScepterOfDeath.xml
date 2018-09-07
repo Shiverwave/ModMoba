@@ -1,0 +1,10 @@
+<ObjectTemplate>
+  <Name>[999999]Sugma's Scepter of Death[111111]</Name>
+	<ClientId>859</ClientId>
+	<Color>0x964B00</Color>
+	<SharedStateEntry name="Weight" type="int" value="4"/>
+	<ObjectVariableComponent>			
+		<StringVariable Name="WeaponType">ScepterOfMagic</StringVariable>
+		<DoubleVariable Name="MaxDurability">100</DoubleVariable>
+	</ObjectVariableComponent>
+</ObjectTemplate>

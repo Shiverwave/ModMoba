@@ -5,18 +5,19 @@
 	<ScaleModifier>1.0</ScaleModifier>
 	<MobileComponent>
 		<BaseRunSpeed>1</BaseRunSpeed>
-		<MobileType>Friendly</MobileType>
+		<MobileType>Monster</MobileType>
 	</MobileComponent>				
 	<ObjectVariableComponent>			
 		<DoubleVariable Name="BaseHealth">32</DoubleVariable>
 		<StringVariable Name= "MobileTeamType">Emerald</StringVariable>
+		<StringVariable Name="MobileKind">Humanoid</StringVariable>
 		<BoolVariable Name="AI-Leash">False</BoolVariable>
-		<BoolVariable Name="IsGuard">false</BoolVariable>
+		<!--<BoolVariable Name="IsGuard">false</BoolVariable>-->
      	<BoolVariable Name="noloot">True</BoolVariable>
 		<DoubleVariable Name="Armor">0</DoubleVariable>
 		<DoubleVariable Name="Attack">5</DoubleVariable>
 		<BoolVariable Name="DoNotEquip">True</BoolVariable>
-		<DoubleVariable Name="Karma">10000</DoubleVariable>
+		<!--<DoubleVariable Name="Karma">10000</DoubleVariable>-->
 	</ObjectVariableComponent>					
 	<ScriptEngineComponent>
 		<LuaModule Name="ai_guard_emerald">
@@ -25,7 +26,7 @@
 					Stats = { Str=40, Agi=30, Int=21, Wis=10, Wil=10 },
 					MobTraits =
 					{
-						Toughness=0,
+						Toughness=10,
 					},
 					Skills = 
 					{ 
