@@ -15,8 +15,9 @@
 					Stats = { Str=10, Agi=10, Int=30, Con=10, Wis=40, Will=40 },
 					Skills = 
 					{ 
-					Evocation=100, 
-					Manifestation=100,
+					Evocation=25, 
+					Manifestation=30,
+					MagicAffinity=35,
 					},	
 					EquipTable = {
 						Chest = { "clothing_simple_robe" },
