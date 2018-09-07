@@ -9,7 +9,7 @@
 		<DynamicObject>
 			<Name>JungleDemon</Name>
 			<Id>2</Id>
-			<ObjectCreationParams>simple_mob_spawner 142.46 0.81 12.029 0 7.529 0 1 1 1</ObjectCreationParams>
+			<ObjectCreationParams>RuinKing_mob_spawner 142.46 0.81 12.029 0 7.529 0 1 1 1</ObjectCreationParams>
 			<ObjVarOverrides>
 				<StringVariable Name="spawnTemplate">RuinKing</StringVariable>
 			</ObjVarOverrides>
