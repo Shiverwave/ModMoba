@@ -13,7 +13,7 @@
 require 'incl_gametime'
 
 -- the delay between spawn attempts, can be overridden by adding "spawnDelay" objvar
-DEFAULT_DELAY_SECS = 18000000
+DEFAULT_DELAY_SECS = 300
 -- the delay between spawn amounts, can be overridden by adding "spawnCount" objvar
 DEFAULT_SPAWN_COUNT = 1
 DEFAULT_SPAWN_CHANCE = 1

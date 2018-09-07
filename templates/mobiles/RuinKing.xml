@@ -9,33 +9,55 @@
 	</MobileComponent>
 	<ObjectVariableComponent>
 		<StringVariable Name="MobileTeamType">Dragon</StringVariable>
-		<DoubleVariable Name="BaseHealth">750</DoubleVariable>
+		<DoubleVariable Name="BaseHealth">5625</DoubleVariable>
 		<StringVariable Name="MonsterAR">0</StringVariable>
-		<DoubleVariable Name="NaturalMinDamage">40</DoubleVariable>
-		<DoubleVariable Name="NaturalMaxDamage">80</DoubleVariable>
+		<DoubleVariable Name="NaturalMinDamage">125</DoubleVariable>
+		<DoubleVariable Name="NaturalMaxDamage">175</DoubleVariable>
 		<DoubleVariable Name="FameXP">2000</DoubleVariable>
 		<DoubleVariable Name="PrestigeXP">200</DoubleVariable>
 		<DoubleVariable Name="TamingDifficulty">77.1</DoubleVariable>
 		<DoubleVariable Name="PetSlots">2</DoubleVariable>
+		<DoubleVariable Name="AI-ChaseRange">2</DoubleVariable>
 	</ObjectVariableComponent>
 	<ScriptEngineComponent>		
-		<LuaModule Name="ai_default">
+		<LuaModule Name="ai_awakening_dragon">
 			<Initializer>				
 				{ 
-					Stats = { Str=math.random(94,170), Agi=math.random(96,115), Int=math.random(6,10), },
-					Skills = 
-					{ 
-						Melee = math.random(79.3,94),  
-						Channeling = math.random(79.3,94),  						
-					},
-					EquipTable = 
+				Stats = { Str=40, Agi=35, Int=21, Wis=50, Wil=50 },
+				MobTraits =
 					{
-						Backpack = { "backpack" },			
-					},	
-					LootTables = 
+					Might=3,
+					},
+				MobileEffects =
+					{
+						{ "NoStun", {Permanent=true} }
+					},
+				Skills = 
 					{ 
-						TemplateDefines.LootTable.Average,
+					Bashing=110, 
+					Evocation=110,
+					Channeling=110,
 					},	
+				EquipTable = 
+					{
+						Backpack = { "backpack" },					
+					},
+				LootTables = 
+					{ 
+						TemplateDefines.LootTable.ScrollsBoss,
+						TemplateDefines.LootTable.ScrollsBoss,
+						TemplateDefines.LootTable.MageBoss,
+						TemplateDefines.LootTable.MageBoss,
+						TemplateDefines.LootTable.Boss,
+						{
+							NumCoins = math.random(1500,2800),
+						},
+					},	
+				ScavengeTables =
+					{
+					},		
+					WeaponAbilities = { primary="DragonFire", secondary="Eviscerate" },
+					AvailableSpells = {"Heal", "Greaterheal", "Poison", "Cure", "Ruin", "Fireball", "Lightning", "Electricbolt", "Bombardment", "Meteor"},
 				}
 			</Initializer>
 		</LuaModule>
