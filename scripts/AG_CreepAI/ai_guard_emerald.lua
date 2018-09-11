@@ -13,11 +13,11 @@ AI.Settings.ChaseRange = 15.0
 AI.Settings.LeashDistance = 20
 AI.Settings.CanConverse = true
 AI.Settings.ScaleToAge = false
-AI.Settings.CanWander = true
+AI.Settings.CanWander = false
 AI.Settings.CanUseCombatAbilities = true
 AI.Settings.CanCast = true
 AI.Settings.ChanceToNotAttackOnAlert = 2
-AI.Settings.ShouldFlee = true
+AI.Settings.ShouldFlee = false
 --AI.Settings.SpeechTable = "Bandit"
 AI.Settings.RobberyEnabled = false
 
@@ -25,6 +25,33 @@ DebugMessage("The code is loading in the first place")
 
 -- Every top level script needs to initialize the ai state machine
 AddAIView("robberyView", SearchMobileInRange(7))
+
+guardNames = { "Thanuis",
+               "Luke",
+               "Ranus",
+               "Dorus",
+               "Asor",
+               "Alber",
+               "Jerroy",
+               "Goroy",
+               "Athan",
+               "Soner",
+               "Epher",
+               "Tonand",
+               "Sephua",
+               "Jesse",
+               "Ramirez",
+               "Brookson" }
+
+femaleGuardNames = {
+    "Lynie",
+    "Sara",
+    "Jane",
+    "Mildri",
+    "Kimby",
+    "Jacquel",
+    "Jorlanda",
+}
 
 playerResponses = 
 {
@@ -147,6 +174,26 @@ function IsFriend(target)
     return (myTeam == otherTeam) --Return true if they have the same team, false if not.
 end
 
+--this is a big test
+function HandleModuleLoaded()
+    --DebugMessage("GUARD LOADED")
+    if (IsFemale(this)) then
+        guardNames = femaleGuardNames
+		DebugMessage("Female guard name set")  
+    end
+    this:SetName(guardNames[math.random(1, #guardNames)].." the Bouncer")
+	DebugMessage("Guard name set")  
+
+    --DebugMessage("Creating guard with name of "..this:GetName().."and id of " ..this.Id .." with template name of "..this:GetCreationTemplateId())
+        this:SetObjVar("homeLoc",this:GetLoc())
+        this:SetObjVar("homeFacing",this:GetFacing())
+        AI.Settings.StationedLeash = true
+        AI.SetSetting("Leash",true)
+		DebugMessage("Guard home location leash script has happened.")  
+        --DebugMessage("ShouldNotPatrol")  
+end
+
+--[[
 function ShouldFlee()
 	if (hasRobbed == true) then return true end
     return (AI.GetSetting("CanFlee") and (GetCurHealth(this) < GetMaxHealth(this)*AI.GetSetting("InjuredPercent") and math.random(1,AI.GetSetting("FleeChance")) == 1))
@@ -443,7 +490,7 @@ RegisterEventHandler(EventType.Message, "DamageInflicted",
 		    end
 		end
 	end)
-
+]]
 --require 'incl_faction'
 --require 'incl_humanloot'
 --require 'incl_combatai'
@@ -583,11 +630,14 @@ end
 
 OverrideEventHandler( "ai_guard", EventType.Message, "VictimKilled", HandleVictimKilled)]]--
 
---[[if (this:GetObjVar("MyPath") ~= nil) then
+if (this:GetObjVar("MyPath") ~= nil) then
     path = GetPath(this:GetObjVar("MyPath"))
+	DebugMessage("path = GetPath(this:GetObjVar(MyPath)) has actually triggered.")
 else
     path = GetPath("GuardPath")
-end]]
+	DebugMessage("path = GetPath(GuardPath) has actually triggered.")
+end
+
 --[[RegisterEventHandler(EventType.Message,"HasDiedMessage",
     function ()
         SetAITarget(nil)
