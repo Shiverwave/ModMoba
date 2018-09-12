@@ -20,28 +20,31 @@ gotAttacked = false
 DebugMessage("emerald creep script loaded")
 DebugMessage("Max path distance:")
 DebugMessage(MAX_PATHTO_DIST)
---this:PathTo(Loc(160,0,160),1.0)
+this:PathTo(Loc(160,0,160),1.0)
 DebugMessage("probably found location, it's listed below")
 DebugMessage(PathTo)
 DebugMessage("the creep's current location:")
 DebugMessage(this:GetLoc())
+AI.StateMachine.ChangeState("Idle")
 
 AI.StateMachine.AllStates.Idle = {       
         OnEnterState = function() 
             AI.SetSetting("CanConverse",false)
-			GetPulseFrequencyMS = function() return 100 end,
+			GetPulseFrequencyMS = function() return 100 end
+			
+			DebugMessage("I'm idle")
 			
 			AiPulse = function()   
-				this:PathTo(Loc(160,0,160),1.0)
+			--	this:PathTo(Loc(160,0,160),1.0)
 				--this:PathTo(Loc(this:GetLoc().X,this:GetLoc().Y,this:GetLoc().Z),1.0)
-			end,
+				DebugMessage("Pulse occurred! ")
+			end
             ----AI.StateMachine.--DebugMessage("ENTER ALERT")
         end,
-		
         OnExitState = function()
             AI.SetSetting("CanConverse",true)
         end,
-	}
+}
 
 RegisterEventHandler(EventType.Message, "DamageInflicted",
 	function (damager)
@@ -81,7 +84,7 @@ AI.StateMachine.AllStates.Alert = {
             AI.SetSetting("CanConverse",true)
         end,
 
-        GetPulseFrequencyMS = function() return 1700 end,
+        GetPulseFrequencyMS = function() return 500 end,
 
         AiPulse = function()    
             --AI.StateMachine.--DebugMessage("Alert pulse")
